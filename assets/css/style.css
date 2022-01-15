@@ -116,6 +116,9 @@ nav{
     z-index: 10000;
     transition: 0.4s;
 }
+#nav_opener:hover{
+    transform: scale(1.15);
+}
 
 #nav_opener.active{
     transform: rotate(-45deg);
@@ -318,7 +321,15 @@ nav{
 #footer_logo{
     transform: translateY(-10px);
 }
+
+.footer-links > div{
+    transition: 0.3s;
+}
+.footer-links > div:hover{
+    transform: scale(1.1);
+}
   
+
   @media (min-device-width: 320px) and (max-device-width: 700px) {
 
   }
