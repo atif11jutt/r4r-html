@@ -9,7 +9,7 @@ $(document).ready(function () {
     $(document).scroll(function () {
         let scrollTop = $(document).scrollTop();
         if (scrollTop >= 10 && scrollTop < logo_diff) {
-            let opacity = 3.5 / scrollTop;
+            let opacity = 5 / scrollTop;
             $('.logo_delete').css("opacity", opacity);
             if (scrollTop >= diff && scrollTop <= logo_diff) {
                 $(".logo_move").css("transform", "translateX(-" + (scrollTop-diff) + "px)")
@@ -34,6 +34,25 @@ $(document).ready(function () {
 
 
     });
+
+
+
+    $("#lang > div").click(function(){
+        if($(this).hasClass("active")){
+            $(this).parent().toggleClass("show");    
+        }
+    })
+
+    
+
+    $("#lang > div").click(function(){
+        if(!$(this).hasClass("active")){
+            $(this).addClass("active").siblings().removeClass("active");
+            $(this).parent().removeClass("show");
+        }    
+    })
+
+    
 
 
 
