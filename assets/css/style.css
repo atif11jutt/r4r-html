@@ -131,6 +131,7 @@ nav{
     /* margin-top: 0.5rem; */
     display: inline-block;
     transition: 0.3s;
+    font-weight: bold;
 }
 
 #menu .links a:hover{
@@ -205,7 +206,7 @@ nav{
     z-index: 11;
     /* top: 50vh;
     left: 50%; */
-    font-size: 4rem;
+    font-size: 4.75rem;
     font-weight: bold;
     /* transform: translateX(-50%); */
     text-transform: uppercase;
