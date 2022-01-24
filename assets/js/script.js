@@ -31,26 +31,57 @@ $(document).ready(function () {
                 $("header").css("transform", "translateY(0vh)")
             }
         }
-
-
     });
 
 
+    // detect language
+
+    let init_lang = localStorage.getItem("lang");
+    let default_lang = "en";
+    
+    if(init_lang != null){
+        $("#lang ." + init_lang).addClass("active").siblings().removeClass("active");
+        changeLang(init_lang)
+    }else{
+        $("#lang ." + default_lang).click();
+        changeLang(default_lang)
+    }
+
+
+    // click event on language
 
     $("#lang > div").click(function () {
         if ($(this).hasClass("active")) {
             $(this).parent().toggleClass("show");
-        }
-    })
-
-
-
-    $("#lang > div").click(function () {
-        if (!$(this).hasClass("active")) {
+        }else{
             $(this).addClass("active").siblings().removeClass("active");
             $(this).parent().removeClass("show");
+            let lang = $(this).data("lang")
+            localStorage.setItem("lang", lang);
+            changeLang(lang)
         }
     })
+
+
+    // custom function
+    function changeLang(lang){
+        $(".lang").each(function(){
+            $(this).text($(this).data(lang));
+        });
+        
+        $(".lang-show").each(function(){
+            $(this).hide()
+            if($(this).hasClass(lang)){
+                $(this).show()
+            }
+        });
+
+        $(".lang-mail").each(function(){
+            $(this).attr("href", $(this).data(lang));
+        });
+        
+    }
+
 
 
 
