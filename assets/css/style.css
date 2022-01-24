@@ -123,7 +123,7 @@ h2{
     text-align: center;
     padding-top: 15vh;
     transform: translateY(-150vh);
-    transition: 0.4s ease-in;
+    transition: 0.5s ease-in;
 }
 
 #menu.active{
@@ -151,6 +151,34 @@ h2{
 
 #menu .links{
     margin-bottom: 2rem;
+}
+
+.menu_footer{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_footer > .menu_footer_link{
+    padding: 0 20px;
+}
+
+.menu_footer > .menu_footer_link a span{
+    transition: 0.4s;
+    display: block;
+}
+
+
+.menu_footer > .menu_footer_link a:hover span{
+    transform: translateY(-10px);
+}
+
+.menu_footer > .menu_footer_link a{
+    color: #000;
+    font-size: 0.85rem;
 }
 
 #nav_opener{
