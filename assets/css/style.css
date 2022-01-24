@@ -57,6 +57,16 @@ nav{
     width: 100%;
     padding: 1rem 3rem;
 }
+h1, h2{
+    font-weight: 600;
+}
+h3, h4{
+    font-weight: 500;
+}
+
+h2{
+    font-size: 2.75rem;
+}
 
 #logo img,
 #footer_logo img {
@@ -82,7 +92,7 @@ nav{
 
 .fixed_bar_home{
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
@@ -131,11 +141,16 @@ nav{
     /* margin-top: 0.5rem; */
     display: inline-block;
     transition: 0.3s;
-    font-weight: bold;
+    line-height: 1.1;
+    font-weight: 600;
 }
 
 #menu .links a:hover{
     transform: scale(1.15);
+}
+
+#menu .links{
+    margin-bottom: 2rem;
 }
 
 #nav_opener{
@@ -160,7 +175,7 @@ nav{
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
-    min-height: 180vh;
+    min-height: 200vh;
     position: relative;
 }
 
@@ -187,7 +202,7 @@ nav{
 
 .banner-box {
     width: 100%;
-    height: 500px;
+    height: 100vh;
     background-color: black;
     z-index: 10;
     position: absolute;
@@ -209,11 +224,25 @@ nav{
     font-size: 4.75rem;
     font-weight: bold;
     /* transform: translateX(-50%); */
-    text-transform: uppercase;
+}
+
+.services_cont{
+    padding-top: 20vh;
+    padding-bottom: 20vh;
 }
 
 .services_heading{
-    max-width: 300px;
+    /* max-width: 300px; */
+    /* font-size: 3.5vw; */
+    line-height: 1.3;
+    font-weight: 600;
+    color: #000;
+}
+
+.services_para{
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.25;
 }
 
 .button {
@@ -228,7 +257,7 @@ nav{
     transition: color 350ms,background-color 350ms;
     color: #fff;
     font-weight: 600;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
 }
 
 .button svg{
