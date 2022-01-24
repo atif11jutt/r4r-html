@@ -41,10 +41,10 @@ $(document).ready(function () {
     
     if(init_lang != null){
         $("#lang ." + init_lang).addClass("active").siblings().removeClass("active");
-        changeLang(init_lang)
+        changeLang(init_lang);
     }else{
-        $("#lang ." + default_lang).click();
-        changeLang(default_lang)
+        $("#lang ." + default_lang).addClass("active").siblings().removeClass("active");
+        changeLang(default_lang);
     }
 
 
