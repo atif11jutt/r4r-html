@@ -354,7 +354,7 @@ section, footer{
     position: relative;
     z-index: 4;
     display: inline-flex;
-    padding: 0.4em 0.8em;
+    padding: 0.8rem 1.4rem;
     border: 1px solid #fff;
     border-radius: 100vw;
     background-color: transparent;
@@ -362,8 +362,12 @@ section, footer{
     transition: color 350ms,background-color 350ms;
     color: #fff;
     font-weight: 400;
-    font-size: 1.32em;
+    font-size: 1.32rem;
     letter-spacing: .3px;
+}
+
+.button span{
+    line-height: 1;
 }
 
 /* .button {
