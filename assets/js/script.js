@@ -85,6 +85,21 @@ $(document).ready(function () {
 
 
 
+    /*Wow Animations*/
+    if ($(".wow").length && $(window).outerWidth() >= 567) {
+        let wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: false,
+            live: true
+        });
+        wow.init();
+    }
+
+
+
+
 
 
 
