@@ -356,7 +356,7 @@ section, footer{
     display: inline-flex;
     padding: 0.8rem 1.4rem;
     border: 1px solid #fff;
-    border-radius: 100vw;
+    border-radius: 50px;
     background-color: transparent;
     -webkit-transition: color 350ms,background-color 350ms;
     transition: color 350ms,background-color 350ms;
