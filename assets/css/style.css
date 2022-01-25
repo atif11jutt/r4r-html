@@ -543,6 +543,15 @@ section, footer{
     letter-spacing: 4px;
     font-size: 1.6rem;
 }
+
+.footer-address > div{
+    line-height: 1.38;
+}
+
+.footer-address small{
+    font-size: 1.1rem;
+}
+
 /* copyright */
 
 .copyright{
