@@ -362,16 +362,17 @@ section, footer{
     position: relative;
     z-index: 4;
     display: inline-flex;
-    padding: 0.8rem 1.4rem;
+    padding: 0.9rem 1.6rem;
     border: 1px solid #fff;
-    border-radius: 50px;
+    border-radius: 100px;
     background-color: transparent;
     -webkit-transition: color 350ms,background-color 350ms;
     transition: color 350ms,background-color 350ms;
     color: #fff;
     font-weight: 400;
-    font-size: 1.32rem;
+    font-size: 1.8rem;
     letter-spacing: .3px;
+    line-height: 1.1;
 }
 
 .button span{
