@@ -312,6 +312,14 @@ section, footer{
         font-size: 4em;
         padding-right: 40px;
     }
+    .footer_cont{
+        max-width: 90%;
+    }
+
+    .footer-address small {
+        font-size: 1.25rem !important;
+        font-weight: 300;
+    }
 }
 
 
