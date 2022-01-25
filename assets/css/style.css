@@ -275,7 +275,7 @@ h2{
 
 
 .bg-white{
-    height: 730px;
+    /* height: 730px; */
     background-color: #fff;
 }
 
@@ -316,7 +316,7 @@ h2{
 .button {
     position: relative;
     z-index: 4;
-    /* display: inline-flex; */
+    display: inline-flex;
     padding: 0.4em 0.8em;
     border: 1px solid #fff;
     border-radius: 100vw;
@@ -326,8 +326,6 @@ h2{
     color: #fff;
     font-weight: 400;
     font-size: 1.32em;
-    font-family: degular,sans-serif;
-    /* margin-top: 1rem; */
     letter-spacing: .3px;
 }
 
@@ -503,7 +501,16 @@ h2{
 .footer-links > div:hover{
     transform: scale(1.1);
 }
+.footer-links a{
+    line-height: 32px;
+    letter-spacing: 4px;
+    font-size: 1.6rem;
+}
+/* copyright */
 
+.copyright{
+    color: gray;
+}
 
 #lang{
     position: fixed;
@@ -536,11 +543,11 @@ h2{
     opacity: 1;
 }  
 
-@media (min-width: 1200px){
+/* @media (min-width: 1200px){
 .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 100%;
 }
-}
+} */
 
   @media (min-device-width: 320px) and (max-device-width: 700px) {
 
