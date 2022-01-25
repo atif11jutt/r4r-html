@@ -240,40 +240,98 @@ h2{
     align-items: center;
 }
 
-.main-heading{
+.main-heading {
+    max-width: 1020px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    z-index: 11;
+    font-size: 6rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* .main-heading{
     max-width: 920px;
     width: 100%;
     color: #fff;
     text-align: center;
-    /* position: absolute; */
     z-index: 11;
-    /* top: 50vh;
-    left: 50%; */
     font-size: 4.75rem;
     font-weight: bold;
-    /* transform: translateX(-50%); */
+} */
+
+
+.services_cont {
+    width: 1560px;
+    padding: 12.5em 7.7em 10em 5em;
 }
 
-.services_cont{
+/* .services_cont{
     padding-top: 20vh;
     padding-bottom: 20vh;
+} */
+
+
+
+.bg-white{
+    height: 730px;
+    background-color: #fff;
 }
 
-.services_heading{
-    /* max-width: 300px; */
-    /* font-size: 3.5vw; */
+
+.services_heading {
+    color: #000;
+    font-family: degular,sans-serif;
+    font-size: 3.5em;
+    line-height: 1.1em;
+    font-weight: 600;
+    padding-right: 60px;
+}
+
+/* .services_heading{
     line-height: 1.3;
     font-weight: 600;
     color: #000;
+} */
+
+.services_para {
+    color: black;
+    font-size: 1.8em;
+    line-height: 1.36;
+    font-weight: 400;
+    text-align: left;
+    width: 115%;
+    letter-spacing: 1px;
 }
 
-.services_para{
+/* .services_para{
     font-size: 1.75rem;
     font-weight: 500;
     line-height: 1.25;
-}
+} */
+
+
 
 .button {
+    position: relative;
+    z-index: 4;
+    /* display: inline-flex; */
+    padding: 0.4em 0.8em;
+    border: 1px solid #fff;
+    border-radius: 100vw;
+    background-color: transparent;
+    -webkit-transition: color 350ms,background-color 350ms;
+    transition: color 350ms,background-color 350ms;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.32em;
+    font-family: degular,sans-serif;
+    /* margin-top: 1rem; */
+    letter-spacing: .3px;
+}
+
+/* .button {
     position: relative;
     z-index: 4;
     display: inline-flex;
@@ -286,12 +344,21 @@ h2{
     color: #fff;
     font-weight: 600;
     font-size: 0.85rem;
+} */
+
+
+.button svg {
+    width: 23px;
+    margin-right: 10px;
+    padding-bottom: 2px;
 }
 
-.button svg{
+/* .button svg{
     width: 16px;
     margin-right: 10px;
-}
+} */
+
+
 
 .button-black {
     border-color: #000;
@@ -469,6 +536,11 @@ h2{
     opacity: 1;
 }  
 
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 100%;
+}
+}
 
   @media (min-device-width: 320px) and (max-device-width: 700px) {
 
