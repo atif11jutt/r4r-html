@@ -107,6 +107,22 @@ h2 {
   z-index: 0;
   user-select: none;
 }
+:not(#home) .fixed_bar_home{
+  position: relative;
+  left: unset;
+  bottom: unset;
+  transform: none;
+  width: calc(100% - 140px);
+  margin: auto;
+  color: #000000;
+  box-sizing: border-box;
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  z-index: 0;
+  user-select: none;
+}
 .fixed_bar_home h2 {
   margin: 0;
   font-weight: 400;
@@ -233,11 +249,14 @@ h2 {
   height: 100vh;
   background-color: black;
   z-index: 0;
-  position: absolute;
+  position: relative;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#home .banner-box{
+  position: absolute;
 }
 
 section,
