@@ -104,13 +104,12 @@ $(document).ready(function () {
 
 
     /* ------- Smooth scroll ------- */
-    $(".pagescroll a:not(.default-link)").on("click", function (event) {
+    $("a.pagescroll").on("click", function (event) {
         event.preventDefault();
         let action = $(this.hash).offset().top;
-        action -= 95;
         $("html,body").animate({
             scrollTop: action
-        }, 150);
+        }, 1200);
     });
 
 
@@ -118,7 +117,6 @@ $(document).ready(function () {
 
 
     // slider
-
     $('.owl-carousel').owlCarousel({
         loop: true,
         nav: true,
