@@ -32,6 +32,7 @@ img {
 
 .bg-black {
   background: #000;
+  color: #fff;
 }
 
 /* header */
@@ -310,7 +311,9 @@ footer {
 }
 
 .banner-box .services_heading,
-.banner-box .services_para{
+.banner-box .services_para,
+.bg-black .services_heading,
+.bg-black .services_para{
   color: #fff;
 }
 
@@ -360,6 +363,11 @@ ul.accordion li a.toggle {
   font-size: 1.8em;
   font-weight: 500;
   transition: 0.3s;
+}
+
+.bg-black .accordion li a.toggle {
+  color: #fff;
+  border-top: 2px solid #fff;
 }
 
 ul.accordion li a.toggle img {
