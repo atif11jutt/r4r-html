@@ -108,7 +108,7 @@ h2 {
   z-index: 0;
   user-select: none;
 }
-:not(#home) .fixed_bar_home{
+body:not(.home) .fixed_bar_home{
   position: relative;
   left: unset;
   bottom: unset;
