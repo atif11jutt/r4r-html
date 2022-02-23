@@ -593,12 +593,21 @@ ul.accordion li.show a.toggle img {
 }
 
 .post2 {
-  background-image: url(../images/post2.svg);
+  background-image: url(../images/Socar_titelbild.jpg);
 }
 
 .post3 {
+  background-image: url(../images/pjnk_titelbild.jpg);
+}
+
+.post4 {
   background-image: url(../images/post3.svg);
 }
+
+.post5 {
+  background-image: url(../images/post3.svg);
+}
+
 
 /* company icon */
 
