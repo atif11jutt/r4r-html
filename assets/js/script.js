@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // logo animation
-  let logo_diff = 140;
+  let logo_diff = 125;
   //
   let diff = 35;
   logo_diff += diff;
