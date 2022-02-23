@@ -475,7 +475,7 @@ ul.accordion li.show a.toggle img {
   z-index: 4;
   display: inline-flex;
   align-items: center;
-  padding: 0.9rem 1.6rem;
+  padding: 0.7rem 1.6rem;
   border: 1px solid #fff;
   border-radius: 100px;
   background-color: transparent;
@@ -601,7 +601,7 @@ ul.accordion li.show a.toggle img {
 }
 
 .post4 {
-  background-image: url(../images/post3.svg);
+  background-image: url(../images/Burton.jpg);
 }
 
 .post5 {
