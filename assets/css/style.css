@@ -339,9 +339,7 @@ footer {
 }
 
 .banner-box .services_para{
-  /* line-height: 1.15; */
   margin-bottom: 0;
-  max-width: 700px;
   font-size: 1.8em;
 }
 
@@ -352,6 +350,7 @@ footer {
 ul.accordion {
   list-style: none;
   padding: 0;
+  max-width: 700px;
 }
 
 ul.accordion .inner {
@@ -459,6 +458,7 @@ ul.accordion li.show a.toggle img {
   font-weight: 400;
   text-align: left;
   letter-spacing: 1px;
+  max-width: 700px;
 }
 
 
