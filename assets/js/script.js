@@ -182,7 +182,7 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).parent().toggleClass("show");
     var inner = $(this).next();
-    inner.slideToggle(350, function(){
+    inner.slideToggle(450, function(){
         inner.toggleClass("fadingIn")
     });
   });
