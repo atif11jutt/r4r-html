@@ -159,7 +159,7 @@ body:not(.home) .fixed_bar_home{
   height: 100vh;
   z-index: 1000;
   text-align: center;
-  padding-top: 15vh;
+  padding-top: 12vh;
   transform: translateY(-150vh);
   transition: 0.5s ease-in;
 }
@@ -174,7 +174,7 @@ body:not(.home) .fixed_bar_home{
 
 #menu .links a {
   color: #000 !important;
-  font-size: 5rem;
+  font-size: 6em;
   /* margin-top: 0.5rem; */
   display: inline-block;
   transition: 0.3s;
@@ -214,7 +214,7 @@ body:not(.home) .fixed_bar_home{
 
 .menu_footer > .menu_footer_link a {
   color: #000;
-  font-size: 0.85rem;
+  font-size: 1em;
 }
 
 #nav_opener {
@@ -514,6 +514,10 @@ ul.accordion li.show a.toggle img {
 .button svg {
   width: 23px;
   margin-right: 10px;
+}
+
+#menu .button svg#Mail{
+  width: 28px !important;
 }
 
 @supports (-webkit-backdrop-filter: blur(1px)) {
