@@ -517,7 +517,11 @@ ul.accordion li.show a.toggle img {
 }
 
 #menu .button svg#Mail{
-  width: 28px !important;
+  width: 29px !important;
+}
+
+#menu .button svg#phone{
+  width: 26px !important;
 }
 
 @supports (-webkit-backdrop-filter: blur(1px)) {
