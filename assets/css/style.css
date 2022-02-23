@@ -11,6 +11,11 @@ body {
 .no_overflow {
   overflow: hidden;
 }
+.no_overflow #logo,
+.no_overflow #lang{
+  opacity: 0;
+  visibility: hidden;
+}
 
 a:hover {
   text-decoration: none;
