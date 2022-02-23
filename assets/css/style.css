@@ -511,6 +511,7 @@ ul.accordion li.show a.toggle img {
 .button svg {
   width: 23px;
   margin-right: 10px;
+  max-height: 31px;
   /* padding-bottom: 2px; */
 }
 
