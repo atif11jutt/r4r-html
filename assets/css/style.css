@@ -128,17 +128,22 @@ body:not(.home) .fixed_bar_home{
   left: unset;
   bottom: unset;
   transform: none;
-  width: calc(100% - 140px);
+  width: calc(100% - 180px);
   margin: auto;
   color: #000000;
   box-sizing: border-box;
   border-bottom: 1px solid #000;
   display: flex;
   align-items: center;
-  padding: 5px 0;
+  padding: 20px 0 5px 0;
   z-index: 0;
   user-select: none;
 }
+
+body:not(.home) .fixed_bar_home h2 {
+  font-weight: 500;
+}
+
 .fixed_bar_home h2 {
   margin: 0;
   font-weight: 400;
