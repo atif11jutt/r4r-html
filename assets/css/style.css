@@ -483,7 +483,7 @@ ul.accordion li.show a.toggle img {
   transition: color 350ms, background-color 350ms;
   color: #fff;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   letter-spacing: 0.3px;
   line-height: 1.1;
 }
@@ -593,7 +593,9 @@ ul.accordion li.show a.toggle img {
 }
 
 .post2 {
-  background-image: url(../images/Socar_titelbild.jpg);
+  background-image: url(../images/article2_theme.jpeg);
+  background-size: 80%;
+  background-color: #0000fe;
 }
 
 .post3 {
