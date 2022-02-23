@@ -69,7 +69,17 @@ h2 {
 
 #logo img {
   width: 20px;
+  margin-left: -5px;
+}
+
+#logo img:nth-child(9),
+#logo img:nth-child(10),
+#logo img:nth-child(11) {
   margin-left: -2px;
+}
+
+#logo img:nth-child(7){
+  margin-left: -7px;
 }
 
 #footer_logo img {
