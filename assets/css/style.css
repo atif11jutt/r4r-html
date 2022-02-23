@@ -11,8 +11,7 @@ body {
 .no_overflow {
   overflow: hidden;
 }
-.no_overflow #logo,
-.no_overflow #lang{
+.no_overflow #logo{
   opacity: 0;
   visibility: hidden;
 }
@@ -157,9 +156,9 @@ body:not(.home) .fixed_bar_home{
   background: #fff;
   width: 100%;
   height: 100vh;
-  z-index: 1000;
+  z-index: 1011;
   text-align: center;
-  padding-top: 12vh;
+  padding-top: 8vh;
   transform: translateY(-150vh);
   transition: 0.5s ease-in;
 }
@@ -178,7 +177,7 @@ body:not(.home) .fixed_bar_home{
   /* margin-top: 0.5rem; */
   display: inline-block;
   transition: 0.3s;
-  line-height: 1.1;
+  line-height: 1;
   font-weight: 600;
 }
 
@@ -561,11 +560,13 @@ ul.accordion li.show a.toggle img {
 }
 
 .post {
+  /* for 3 rows */
   height: 20vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 
 .post-hover {
   position: absolute;
@@ -588,7 +589,7 @@ ul.accordion li.show a.toggle img {
 }
 
 .post1 {
-  background-image: url(../images/post1.svg);
+  background-image: url(../images/logo_rubis.svg);
 }
 
 .post2 {
