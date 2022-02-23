@@ -309,7 +309,15 @@ footer {
 }
 
 .banner-box .services_cont {
-  padding: 6em 0 4rem 0;
+  padding: 10em 0 5rem 0;
+}
+
+.banner-box .services_heading{
+  font-size: 4em;
+  font-weight: 500;
+}
+.banner-box .services_para{
+  font-weight: 500;
 }
 
 
