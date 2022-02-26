@@ -734,6 +734,16 @@ ul.accordion li.show a.toggle img {
   color: gray;
 }
 
+.copyright a{
+  color: gray;
+  transition: 0.3s;
+}
+
+.copyright a:hover{
+  color: white;
+}
+
+
 #lang {
   position: fixed;
   left: 0;
