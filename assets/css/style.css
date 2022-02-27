@@ -428,7 +428,7 @@ ul.accordion li.show a.toggle img {
 @media (min-width: 1600px) {
   .services_cont {
     padding: 12.5em 0;
-    max-width: 1500px;
+    max-width: 1560px;
   }
   .services_heading {
     font-size: 4em;
@@ -445,9 +445,9 @@ ul.accordion li.show a.toggle img {
 }
 
 @media (min-width: 1800px) {
-  .services_cont {
+  /* .services_cont {
     max-width: 1750px;
-  }
+  } */
   .services_heading {
     font-size: 4em;
     padding-right: 40px;
