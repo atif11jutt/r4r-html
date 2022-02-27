@@ -470,7 +470,7 @@ ul.accordion li.show a.toggle img {
   z-index: 4;
   display: inline-flex;
   align-items: center;
-  padding: 0.9em 1.6em;
+  padding: 0.8em 1.4em;
   border: 1px solid #fff;
   border-radius: 100px;
   background-color: transparent;
@@ -518,11 +518,11 @@ ul.accordion li.show a.toggle img {
 }
 
 #menu .button svg#Mail{
-  width: 29px !important;
+  width: 27px !important;
 }
 
 #menu .button svg#phone{
-  width: 26px !important;
+  width: 24px !important;
 }
 
 @supports (-webkit-backdrop-filter: blur(1px)) {
