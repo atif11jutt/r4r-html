@@ -163,7 +163,10 @@ body:not(.home) .fixed_bar_home h2 {
   height: 100vh;
   z-index: 1011;
   text-align: center;
-  padding-top: 8vh;
+  /* padding-top: 8vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transform: translateY(-150vh);
   transition: 0.5s ease-in;
 }
