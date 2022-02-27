@@ -181,8 +181,8 @@ body:not(.home) .fixed_bar_home h2 {
 
 #menu .links a {
   color: #000 !important;
-  font-size: 6em;
-  /* margin-top: 0.5rem; */
+  font-size: 6.5em;
+  margin-top: 0.5rem;
   display: inline-block;
   transition: 0.3s;
   line-height: 1;
@@ -518,11 +518,13 @@ ul.accordion li.show a.toggle img {
 }
 
 #menu .button svg#Mail{
-  width: 27px !important;
+  width: auto !important;
+  height: 1.2em;
 }
 
 #menu .button svg#phone{
-  width: 24px !important;
+  width: auto !important;
+  height: 1.2em;
 }
 
 @supports (-webkit-backdrop-filter: blur(1px)) {
