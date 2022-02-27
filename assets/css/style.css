@@ -147,7 +147,7 @@ body:not(.home) .fixed_bar_home h2 {
 .fixed_bar_home h2 {
   margin: 0;
   font-weight: 400;
-  font-size: 2.25rem;
+  font-size: 2em;
 }
 .fixed_bar_home img {
   width: 20px;
