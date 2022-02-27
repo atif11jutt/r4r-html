@@ -464,6 +464,10 @@ ul.accordion li.show a.toggle img {
   max-width: 700px;
 }
 
+.home .services_para{
+  font-weight: 500;
+}
+
 
 .button {
   position: relative;
