@@ -312,6 +312,58 @@ footer {
     font-weight: bold;
 } */
 
+
+/*  home - services section */
+
+.max-width {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 1560px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.lead__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12.5em 7.58em 10.23em;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.lead__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 47.81em;
+  margin-left: 7.58em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.lead__content._30 {
+  width: 29.38em;
+  margin-left: 0;
+}
+
 .services_cont {
   /* padding: 12.5em 0; */
 }
