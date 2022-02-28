@@ -313,7 +313,11 @@ footer {
 } */
 
 .services_cont {
-  padding: 12.5em 0;
+  /* padding: 12.5em 0; */
+}
+
+.services_cont .row{
+  padding: 12.5em 7.58em 10.23em;
 }
 
 .banner-box .services_cont {
@@ -427,11 +431,11 @@ ul.accordion li.show a.toggle img {
 
 @media (min-width: 1600px) {
   .services_cont {
-    padding: 12.5em 0;
+    /* padding: 12.5em 0; */
     max-width: 1560px;
   }
   .services_heading {
-    font-size: 4em;
+    /* font-size: 4em; */
     padding-right: 40px;
   }
   .footer_cont {
@@ -449,7 +453,7 @@ ul.accordion li.show a.toggle img {
     max-width: 1750px;
   } */
   .services_heading {
-    font-size: 4em;
+    /* font-size: 4em; */
     padding-right: 40px;
   }
 }
