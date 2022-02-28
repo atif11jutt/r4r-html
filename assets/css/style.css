@@ -1,17 +1,24 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
+html {
+  -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+}
 body {
-  font-size: 1.15rem;
+  font-size: 1vw;
+  -webkit-font-smoothing: antialiased;
 }
 
 .no_overflow {
   overflow: hidden;
 }
-.no_overflow #logo{
+.no_overflow #logo {
   opacity: 0;
   visibility: hidden;
 }
@@ -82,7 +89,7 @@ h2 {
   margin-left: -2px;
 }
 
-#logo img:nth-child(7){
+#logo img:nth-child(7) {
   margin-left: -7px;
 }
 
@@ -123,7 +130,7 @@ h2 {
   z-index: 0;
   user-select: none;
 }
-body:not(.home) .fixed_bar_home{
+body:not(.home) .fixed_bar_home {
   position: relative;
   left: unset;
   bottom: unset;
@@ -273,7 +280,7 @@ body:not(.home) .fixed_bar_home h2 {
   z-index: 0;
   position: relative;
 }
-#home .banner-box{
+#home .banner-box {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -311,7 +318,6 @@ footer {
     font-size: 4.75rem;
     font-weight: bold;
 } */
-
 
 /*  home - services section */
 
@@ -364,22 +370,47 @@ footer {
   margin-left: 0;
 }
 
+.h2 {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-family: degular, sans-serif;
+  color: #fff;
+  font-size: 4.06em;
+  line-height: 1.1em;
+  font-weight: 600;
+}
+
+.h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: degular, sans-serif;
+  color: #fff;
+  font-size: 2.19em;
+  line-height: 1.36;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
 .services_cont {
   /* padding: 12.5em 0; */
 }
 
-.services_cont .row{
+.services_cont .row {
   padding: 12.5em 7.58em 10.23em;
   flex-wrap: nowrap;
 }
 
-
-
-.home_service_head{
+.home_service_head {
   width: 29.38em;
 }
 
-.home_service_para{
+.home_service_para {
   width: 47.81em;
   margin-left: 7.58em;
 }
@@ -387,8 +418,6 @@ footer {
 .banner-box .services_cont {
   padding: 12em 0 8rem 0;
 }
-
-
 
 .bg-white {
   background-color: #fff;
@@ -405,16 +434,14 @@ footer {
 .banner-box .services_heading,
 .banner-box .services_para,
 .bg-black .services_heading,
-.bg-black .services_para{
+.bg-black .services_para {
   color: #fff;
 }
 
-.banner-box .services_para{
+.banner-box .services_para {
   margin-bottom: 0;
   font-size: 1.8em;
 }
-
-
 
 /* service page accordion */
 
@@ -435,8 +462,8 @@ ul.accordion .inner {
   transition: opacity 0.5s;
 }
 
-.fadingIn{
-  opacity:1 !important;
+.fadingIn {
+  opacity: 1 !important;
 }
 
 ul.accordion li {
@@ -470,11 +497,9 @@ ul.accordion li.show a.toggle img {
   transform: rotate(-90deg) translateY(0px);
 }
 
-
-
 /*  */
 
-.services_slider_para{
+.services_slider_para {
   color: black;
   font-size: 1.8em;
   line-height: 1.3;
@@ -484,14 +509,12 @@ ul.accordion li.show a.toggle img {
   letter-spacing: 1px;
 }
 
-#services_slider .item h2{
+#services_slider .item h2 {
   font-size: 3em;
 }
-#services_slider .item h1{
+#services_slider .item h1 {
   font-size: 5em;
 }
-
-
 
 @media (min-width: 1600px) {
   .services_cont {
@@ -532,10 +555,9 @@ ul.accordion li.show a.toggle img {
   max-width: 700px;
 }
 
-.home .services_para{
+.home .services_para {
   font-weight: 500;
 }
-
 
 .button {
   position: relative;
@@ -555,14 +577,14 @@ ul.accordion li.show a.toggle img {
   line-height: 1.1;
 }
 
-.button-white svg{
+.button-white svg {
   fill: #fff;
 }
-.button-white:hover svg{
+.button-white:hover svg {
   fill: #000;
 }
 
-.button-small{
+.button-small {
   position: relative;
   z-index: 4;
   display: inline-flex;
@@ -579,12 +601,12 @@ ul.accordion li.show a.toggle img {
   line-height: 1.1;
 }
 
-
 .draw {
   transition: color 0.25s;
   border-radius: 100px;
 }
-.draw::before, .draw::after {
+.draw::before,
+.draw::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -605,7 +627,8 @@ ul.accordion li.show a.toggle img {
 .draw:hover {
   color: red;
 }
-.draw:hover::before, .draw:hover::after {
+.draw:hover::before,
+.draw:hover::after {
   width: 100%;
   height: 100%;
 }
@@ -617,27 +640,25 @@ ul.accordion li.show a.toggle img {
 .draw:hover::after {
   border-bottom-color: red;
   border-left-color: red;
-  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
 }
-
-
 
 .button span {
   line-height: 1;
 }
-
 
 .button svg {
   width: 23px;
   margin-right: 10px;
 }
 
-#menu .button svg#Mail{
+#menu .button svg#Mail {
   width: auto !important;
   height: 1.2em;
 }
 
-#menu .button svg#phone{
+#menu .button svg#phone {
   width: auto !important;
   height: 1.2em;
 }
@@ -687,7 +708,6 @@ ul.accordion li.show a.toggle img {
   background-position: center center;
 }
 
-
 .post-hover {
   position: absolute;
   width: 100%;
@@ -704,11 +724,11 @@ ul.accordion li.show a.toggle img {
   transition: 0.5s;
 }
 
-.post-hover h3{
+.post-hover h3 {
   position: relative;
 }
 
-.post-hover h3::before{
+.post-hover h3::before {
   content: "";
   position: absolute;
   width: 0;
@@ -719,7 +739,7 @@ ul.accordion li.show a.toggle img {
   transition: 0.6s;
   transition-delay: 0.5s;
 }
-.post-hover:hover h3::before{
+.post-hover:hover h3::before {
   width: 100%;
 }
 
@@ -748,7 +768,6 @@ ul.accordion li.show a.toggle img {
 .post5 {
   background-image: url(../images/post3.svg);
 }
-
 
 /* company icon */
 
@@ -822,11 +841,11 @@ ul.accordion li.show a.toggle img {
   margin-left: 10px;
 }
 
-#services_slider .owl-item{
+#services_slider .owl-item {
   color: rgb(187, 187, 187);
 }
 
-#services_slider .owl-item.active{
+#services_slider .owl-item.active {
   color: #fff;
 }
 
@@ -862,15 +881,14 @@ ul.accordion li.show a.toggle img {
   color: gray;
 }
 
-.copyright a{
+.copyright a {
   color: gray;
   transition: 0.3s;
 }
 
-.copyright a:hover{
+.copyright a:hover {
   color: white;
 }
-
 
 #lang {
   position: fixed;
@@ -909,6 +927,22 @@ ul.accordion li.show a.toggle img {
     max-width: 100%;
 }
 } */
+
+@media screen and (max-width: 991px) {
+  .lead__container {
+    padding: 6.565em 6em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .lead__content {
+    width: 100%;
+    margin-top: 7.58em;
+    margin-left: 0;
+}
+}
 
 @media (min-device-width: 320px) and (max-device-width: 700px) {
 }
