@@ -318,6 +318,18 @@ footer {
 
 .services_cont .row{
   padding: 12.5em 7.58em 10.23em;
+  flex-wrap: nowrap;
+}
+
+
+
+.home_service_head{
+  width: 29.38em;
+}
+
+.home_service_para{
+  width: 47.81em;
+  margin-left: 7.58em;
 }
 
 .banner-box .services_cont {
@@ -436,7 +448,7 @@ ul.accordion li.show a.toggle img {
   }
   .services_heading {
     /* font-size: 4em; */
-    padding-right: 40px;
+    /* padding-right: 40px; */
   }
   .footer_cont {
     max-width: 90%;
@@ -454,7 +466,7 @@ ul.accordion li.show a.toggle img {
   } */
   .services_heading {
     /* font-size: 4em; */
-    padding-right: 40px;
+    /* padding-right: 40px; */
   }
 }
 
