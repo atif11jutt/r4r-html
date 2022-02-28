@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // logo animation
-  let logo_diff = 102;
+  let logo_diff = 6.5;
   //
   let diff = 35;
   logo_diff += diff;
@@ -12,7 +12,7 @@ $(document).ready(function () {
       if (scrollTop >= diff && scrollTop <= logo_diff) {
         $(".logo_move").css(
           "transform",
-          "translateX(-" + (scrollTop - diff) + "px)"
+          "translateX(-" + (scrollTop - diff) + "em)"
         );
       } else {
         $(".logo_move").css("transform", "translateX(0px)");
@@ -20,7 +20,7 @@ $(document).ready(function () {
     } else if (scrollTop >= logo_diff) {
       $(".logo_move").css(
         "transform",
-        "translateX(-" + (logo_diff - diff) + "px)"
+        "translateX(-" + (logo_diff - diff) + "em)"
       );
       $(".logo_delete").css("opacity", "0");
     } else {
