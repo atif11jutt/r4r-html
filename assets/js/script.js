@@ -2,9 +2,9 @@ $(document).ready(function () {
   // logo animation
   let winWidth = $("body").width();
   console.log(winWidth)
-  let logo_diff = 6.5;
+  let logo_diff = 8;
   if(winWidth <= 1024){
-    logo_diff = 6.2;
+    logo_diff = 7.5;
   }
   
   //
