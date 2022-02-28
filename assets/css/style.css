@@ -425,10 +425,6 @@ footer {
 
 .services_heading {
   color: #000;
-  font-family: degular, sans-serif;
-  font-size: 3.5em;
-  line-height: 1.1em;
-  font-weight: 600;
 }
 
 .banner-box .services_heading,
@@ -506,7 +502,6 @@ ul.accordion li.show a.toggle img {
   font-weight: 400;
   text-align: left;
   max-width: 620px;
-  letter-spacing: 1px;
 }
 
 #services_slider .item h2 {
@@ -517,14 +512,6 @@ ul.accordion li.show a.toggle img {
 }
 
 @media (min-width: 1600px) {
-  .services_cont {
-    /* padding: 12.5em 0; */
-    max-width: 1560px;
-  }
-  .services_heading {
-    /* font-size: 4em; */
-    /* padding-right: 40px; */
-  }
   .footer_cont {
     max-width: 90%;
   }
@@ -536,23 +523,11 @@ ul.accordion li.show a.toggle img {
 }
 
 @media (min-width: 1800px) {
-  /* .services_cont {
-    max-width: 1750px;
-  } */
-  .services_heading {
-    /* font-size: 4em; */
-    /* padding-right: 40px; */
-  }
+
 }
 
 .services_para {
   color: black;
-  font-size: 1.8em;
-  line-height: 1.36;
-  font-weight: 400;
-  text-align: left;
-  letter-spacing: 1px;
-  max-width: 700px;
 }
 
 .home .services_para {
