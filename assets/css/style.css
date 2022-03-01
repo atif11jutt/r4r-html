@@ -680,11 +680,11 @@ ul.accordion li.show a.toggle img {
 }
 
 #services_slider .h1{
-  font-size: 7em;
+  /* font-size: 7em; */
 }
 
 #services_slider .p{
-  width: 85%;
+  width: 80%;
 }
 
 .services_slider_para {
