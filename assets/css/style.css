@@ -983,12 +983,16 @@ ul.accordion li.show a.toggle img {
 .bg-black .owl-next,
 .bg-black .owl-prev {
   background-image: url(../images/arow-slider-white.svg) !important;
+  transition: 0.5s;
 }
 
-.bg-black .owl-next:hover,
+.bg-black .owl-next:hover {
+  background-image: url(../images/arow-slider-red.svg) !important;
+  transform: scale(1.2);
+}
 .bg-black .owl-prev:hover {
   background-image: url(../images/arow-slider-red.svg) !important;
-  
+  transform: scale(1.2) rotate(-180deg) !important;
 }
 
 .owl-prev {
