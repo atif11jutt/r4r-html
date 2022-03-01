@@ -2,13 +2,13 @@
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 html {
   -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    height: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
 }
 body {
   font-size: 1vw;
@@ -147,7 +147,6 @@ body:not(.home) .fixed_bar_home {
   z-index: 0;
   user-select: none;
 }
-
 
 .fixed_bar_home img {
   width: 1.5em;
@@ -295,9 +294,7 @@ footer {
   text-align: center;
 }
 
-
 /*  home - services section */
-
 
 /* imported CSS */
 
@@ -353,7 +350,7 @@ footer {
 .h1 {
   z-index: 1;
   margin-top: 0;
-  font-family: degular,sans-serif;
+  font-family: degular, sans-serif;
   color: #fff;
   font-size: 7.81em;
   line-height: 1.1;
@@ -391,7 +388,7 @@ footer {
 
 .h4 {
   margin-bottom: 0;
-  font-family: degular,sans-serif;
+  font-family: degular, sans-serif;
   color: #fff;
   font-size: 1.72em;
   line-height: 1.27;
@@ -432,6 +429,7 @@ footer {
 
 .hero__container.subpage.subpage--projekt {
   padding-top: 22.5vh;
+  padding-bottom: 5vh;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
@@ -483,7 +481,6 @@ footer {
   width: 47.81em;
 }
 
-
 /* services page */
 
 .cta__container {
@@ -502,26 +499,6 @@ footer {
   -ms-flex-align: center;
   align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .services_cont {
   /* padding: 12.5em 0; */
@@ -550,7 +527,7 @@ footer {
   color: #000;
 }
 
-.text-black{
+.text-black {
   color: #000;
 }
 
@@ -559,10 +536,9 @@ footer {
 .bg-white .h3,
 .bg-white .h4,
 .bg-white .h5,
-.bg-white .h6{
+.bg-white .h6 {
   color: #000;
 }
-
 
 .services_heading {
   color: #000;
@@ -574,7 +550,6 @@ footer {
 .bg-black .services_para {
   color: #fff;
 }
-
 
 /* service page accordion */
 
@@ -660,7 +635,6 @@ ul.accordion li.show a.toggle img {
 }
 
 @media (min-width: 1800px) {
-
 }
 
 .services_para {
@@ -1056,14 +1030,29 @@ ul.accordion li.show a.toggle img {
     width: 100%;
     margin-top: 7.58em;
     margin-left: 0;
-}
+  }
+
+  .hero__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
+  .hero__content.titel {
+    width: 100%;
+  }
+  .hero__content.last {
+    width: 100%;
+    margin-top: 2.5em;
+  }
+}
 
-@media only screen and (min-width: 1560px){
-body {
+@media only screen and (min-width: 1560px) {
+  body {
     font-size: 15.6px;
-}
+  }
 }
 
 @media (min-device-width: 320px) and (max-device-width: 700px) {
