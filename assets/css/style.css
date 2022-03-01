@@ -18,10 +18,7 @@ body {
 .no_overflow {
   overflow: hidden;
 }
-.no_overflow #logo {
-  opacity: 0;
-  visibility: hidden;
-}
+
 
 a:hover {
   text-decoration: none;
@@ -220,7 +217,8 @@ body:not(.home) .fixed_bar_home {
 
 .menu_footer > .menu_footer_link a {
   color: #000;
-  font-size: 1em;
+  font-size: 1.3em;
+  font-weight: 500;
 }
 
 #nav_opener {
