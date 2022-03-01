@@ -398,6 +398,13 @@ footer {
   font-weight: 500;
 }
 
+.h5 {
+  color: #fff;
+  font-size: 3.28em;
+  line-height: 1.14;
+  font-weight: 600;
+}
+
 .hero__container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -477,6 +484,24 @@ footer {
 }
 
 
+/* services page */
+
+.cta__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 9.38em 16.25em 10.94em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 
 
 
