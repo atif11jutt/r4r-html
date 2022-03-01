@@ -1013,12 +1013,13 @@ ul.accordion li.show a.toggle img {
 }
 .footer-links > div:hover {
   transform: scale(1.1);
+  transform-origin: 0;
 }
 .footer-links a {
-  line-height: 32px;
-  letter-spacing: 4px;
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 1.72em;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .footer-address > div {
