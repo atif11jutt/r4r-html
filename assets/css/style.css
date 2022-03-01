@@ -712,7 +712,7 @@ ul.accordion li.show a.toggle img {
   transition: color 350ms, background-color 350ms;
   color: #fff;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.4em;
   letter-spacing: 0.3px;
   line-height: 1.1;
 }
@@ -787,8 +787,9 @@ ul.accordion li.show a.toggle img {
 }
 
 .button-small svg {
-  width: 20px;
-  margin-right: 10px;
+  width: auto;
+  margin-right: 0.6em;
+  height: 1.4em;
 }
 
 .button-black {
