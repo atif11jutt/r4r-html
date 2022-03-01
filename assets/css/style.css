@@ -347,6 +347,13 @@ footer {
   margin-left: 0;
 }
 
+.p {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 1.38;
+}
+
 .h1 {
   z-index: 1;
   margin-top: 0;
@@ -616,12 +623,6 @@ ul.accordion li.show a.toggle img {
   max-width: 620px;
 }
 
-#services_slider .item h2 {
-  font-size: 3em;
-}
-#services_slider .item h1 {
-  font-size: 5em;
-}
 
 @media (min-width: 1600px) {
   .footer_cont {
