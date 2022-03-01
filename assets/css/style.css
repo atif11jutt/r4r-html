@@ -507,6 +507,62 @@ footer {
   align-items: center;
 }
 
+.ablauf__container {
+  position: static;
+  top: 0;
+  display: block;
+  overflow: hidden;
+  padding-top: 13.13em;
+  padding-bottom: 13.13em;
+  padding-left: 7.58em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .services_cont {
   /* padding: 12.5em 0; */
 }
@@ -618,8 +674,9 @@ ul.accordion li.show a.toggle img {
   opacity: 0.5;
 }
 
-#services_slider .active:nth-child(1) {
-  opacity: 1;
+#services_slider .active:nth-child(1),
+.owl-item:not(.active) + .owl-item.active{
+  opacity: 1 !important;
 }
 
 #services_slider .h1{
@@ -635,10 +692,10 @@ ul.accordion li.show a.toggle img {
   margin-bottom: 6.5em;
 }
 
-.py-13-em{
-  padding-top: 13.13em;
-  padding-bottom: 13.13em;
+#services_slider .owl-nav {
+  text-align: left;
 }
+
 
 @media (min-width: 1600px) {
   .footer_cont {
