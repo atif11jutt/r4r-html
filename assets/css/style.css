@@ -624,6 +624,11 @@ footer {
   color: #000;
 }
 
+.text-underline{
+  text-decoration: underline !important;
+  color: red !important;
+}
+
 .bg-white .h1,
 .bg-white .h2,
 .bg-white .h3,
