@@ -933,6 +933,9 @@ ul.accordion li.show a.toggle img {
   color: #fff;
 }
 
+#services_slider .h1{
+  font-size: 7em;
+}
 /* footer */
 
 #footer_logo {
