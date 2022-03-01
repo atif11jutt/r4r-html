@@ -612,10 +612,27 @@ ul.accordion li.show a.toggle img {
   transform: rotate(-90deg) translateY(0px);
 }
 
-/*  */
+/* services_slider */
+
+#services_slider .owl-item {
+  opacity: 0.5;
+}
+
+#services_slider .active:nth-child(1) {
+  opacity: 1;
+}
+
+#services_slider .h1{
+  font-size: 7em;
+}
+
+#services_slider .p{
+  width: 90%;
+}
 
 .services_slider_para {
   max-width: 620px;
+  margin-bottom: 6.5em;
 }
 
 
@@ -925,17 +942,7 @@ ul.accordion li.show a.toggle img {
   margin-left: 10px;
 }
 
-#services_slider .owl-item {
-  color: rgb(187, 187, 187);
-}
 
-#services_slider .owl-item.active {
-  color: #fff;
-}
-
-#services_slider .h1{
-  font-size: 7em;
-}
 /* footer */
 
 #footer_logo {
