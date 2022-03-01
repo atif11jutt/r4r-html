@@ -627,7 +627,7 @@ ul.accordion li.show a.toggle img {
 }
 
 #services_slider .p{
-  width: 90%;
+  width: 85%;
 }
 
 .services_slider_para {
@@ -635,6 +635,10 @@ ul.accordion li.show a.toggle img {
   margin-bottom: 6.5em;
 }
 
+.py-13-em{
+  padding-top: 13.13em;
+  padding-bottom: 13.13em;
+}
 
 @media (min-width: 1600px) {
   .footer_cont {
