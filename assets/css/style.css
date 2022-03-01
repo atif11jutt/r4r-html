@@ -985,6 +985,12 @@ ul.accordion li.show a.toggle img {
   background-image: url(../images/arow-slider-white.svg) !important;
 }
 
+.bg-black .owl-next:hover,
+.bg-black .owl-prev:hover {
+  background-image: url(../images/arow-slider-red.svg) !important;
+  
+}
+
 .owl-prev {
   margin-right: 1.56em;
   -webkit-transform: rotate(-180deg);
