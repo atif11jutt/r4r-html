@@ -1299,10 +1299,9 @@ ul.accordion li.show a.toggle img {
   opacity: 1;
 }
 
-.post-hover img{
-  width: 2.7em;
+.post-hover img{    
+  width: 2.5em;
   padding-right: 1em;
-  padding-bottom: 0.5em;
 }
 
 .post-hover .p{
