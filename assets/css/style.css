@@ -1594,6 +1594,10 @@ ul.accordion li.show a.toggle img {
   padding-left: 6em;
 }
 
+.projekt-01-logo-container img{
+  border: 2px solid #000;
+}
+
 .projekt-06-kundenmeinung__container {
   padding-right: 6em;
   padding-left: 6em;

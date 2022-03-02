@@ -171,7 +171,17 @@ $(document).ready(function () {
         loop: false,
       },
     },
+    
   });
+
+  $("#services_slider").on('change.owl.carousel', function(e) {
+    console.log(e)
+    if (e.namespace && e.property.name === 'position' 
+    && e.relatedTarget.relative(e.property.value) === e.relatedTarget.items().length - 1) {
+    // put your stuff here ...
+    console.log('last slide')
+    }
+    });
 
   // side nav open/close
 
