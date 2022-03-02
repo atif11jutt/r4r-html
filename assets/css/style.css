@@ -1116,8 +1116,8 @@ ul.accordion li.show a.toggle img {
   border: 1px solid #fff;
   border-radius: 100px;
   background-color: transparent;
-  -webkit-transition: color 350ms, background-color 350ms;
-  transition: color 350ms, background-color 350ms;
+  -webkit-transition: 350ms;
+  transition: 350ms;
   color: #fff;
   font-weight: 400;
   font-size: 1.25em;
@@ -1236,13 +1236,13 @@ ul.accordion li.show a.toggle img {
 }
 
 .button-black:hover {
-  background-color: #000;
-  color: #fff;
+  /* background-color: #000; */
+  /* color: #fff; */
 }
 
 .button-black:hover svg {
-  fill: #fff;
-  color: #fff;
+  /* fill: #fff;
+  color: #fff; */
 }
 
 .py-10 {
