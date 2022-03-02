@@ -1300,8 +1300,10 @@ ul.accordion li.show a.toggle img {
 }
 
 .post-hover img{    
-  width: 2.5em;
-  padding-right: 1em;
+  width: 1.5em;
+  margin-right: 0.75em;
+  height: auto;
+  margin-top: 0.2em;
 }
 
 .post-hover .p{
