@@ -1305,6 +1305,10 @@ ul.accordion li.show a.toggle img {
   padding-bottom: 0.5em;
 }
 
+.post-hover .p{
+  font-weight: 500;
+}
+
 .post1 {
   background-image: url(../images/ABOUTUS_ARTICLE.JPG);
 }
