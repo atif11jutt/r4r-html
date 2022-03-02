@@ -1118,7 +1118,7 @@ ul.accordion li.show a.toggle img {
   background-color: transparent;
   -webkit-transition: 350ms;
   transition: 350ms;
-  color: #fff;
+  color: #fff !important;
   font-weight: 400;
   font-size: 1.25em;
   letter-spacing: 0.3px;
@@ -1226,12 +1226,12 @@ ul.accordion li.show a.toggle img {
 
 .button-black {
   border-color: #000;
-  color: #000;
+  color: #000 !important;
 }
 
 .button:hover {
-  background-color: #fff;
-  color: #000;
+  /* background-color: #fff; */
+  /* color: #000; */
   border: 1px solid red;
 }
 
