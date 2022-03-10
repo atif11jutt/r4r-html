@@ -13,6 +13,7 @@ html {
 body {
   font-size: 1vw;
   -webkit-font-smoothing: antialiased;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .no_overflow {
@@ -1505,8 +1506,14 @@ ul.accordion li.show a.toggle img {
   background-image: url(../images/DCS_ARTICLE.JPEG);
 }
 
-.post5 {
-  background-image: url(../images/post3.svg);
+#post5 {
+  background-image: url(../images/adm.png);
+  background-size: 80%;
+}
+
+#post52 {
+  background-image: url(../images/logo-OFBOR.png);
+  background-size: 80%;
 }
 
 /* company icon */

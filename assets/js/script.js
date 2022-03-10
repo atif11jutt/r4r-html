@@ -92,6 +92,15 @@ $(document).ready(function () {
     $(".lang-mail").each(function () {
       $(this).attr("href", $(this).data(lang));
     });
+
+    $(".lang-post-link").each(function () {
+      $(this).attr("href", $(this).data(lang));
+    });
+
+    $(".lang-post-id").each(function () {
+      $(this).attr("id", $(this).data(lang));
+    });
+
   }
 
   /*Wow Animations*/
