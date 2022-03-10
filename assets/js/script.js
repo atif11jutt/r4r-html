@@ -154,6 +154,7 @@ $(document).ready(function () {
     touchDrag: false,
     mouseDrag: false,
     responsiveClass: true,
+    smartSpeed: 700,
     responsive: {
       0: {
         items: 1,

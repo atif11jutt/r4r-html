@@ -1091,9 +1091,9 @@ ul.accordion li a.toggle {
 }
 
 ul.accordion li a.toggle img {
-  width: 20px;
-  margin-right: 5px;
-  transform: translateY(-2px);
+  width: 0.85em;
+  margin-right: 0.35em;
+  transform: translateY(-0.1em);
   transition: 0.4s;
 }
 
