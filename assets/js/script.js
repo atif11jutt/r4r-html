@@ -93,7 +93,7 @@ $(document).ready(function () {
       $(this).attr("href", $(this).data(lang));
     });
 
-    $(".lang-post-link").each(function () {
+    $(".lang-link").each(function () {
       $(this).attr("href", $(this).data(lang));
     });
 
