@@ -176,14 +176,17 @@ $(document).ready(function () {
     
   });
 
+  // add class on page load - in the first item
   $("#services_slider").find(".owl-item.active").first().addClass("full-op");
 
+  // next button
   $("#services_slider .owl-next").click(function(){
     console.log($("#services_slider").find(".owl-item.full-op").next())
     if($("#services_slider").find(".owl-item.full-op").next().length)
     $("#services_slider").find(".owl-item.full-op").removeClass("full-op").next().addClass("full-op");
   })
 
+  // prev button
   $("#services_slider .owl-prev").click(function(){
     console.log($("#services_slider").find(".owl-item.full-op").prev())
     if($("#services_slider").find(".owl-item.full-op").prev().length)
@@ -194,7 +197,6 @@ $(document).ready(function () {
 
 
   // side nav open/close
-
   $("#nav_opener").click(function (e) {
     e.preventDefault();
     $("#menu").toggleClass("active");
@@ -203,7 +205,6 @@ $(document).ready(function () {
   });
 
   // accordion toggle
-
   $(".accordion .toggle").click(function (e) {
     e.preventDefault();
     $(this).parent().toggleClass("show");
