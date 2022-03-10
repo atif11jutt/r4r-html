@@ -1325,6 +1325,12 @@ ul.accordion li.show a.toggle img {
   line-height: 1.1;
 }
 
+.button-text-cta {
+  font-size: 1.25em;
+  line-height: 1;
+  font-weight: 500;
+}
+
 .draw {
   transition: color 0.25s;
   border-radius: 100px;
