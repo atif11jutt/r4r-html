@@ -1107,8 +1107,7 @@ ul.accordion li.show a.toggle img {
   opacity: 0.5;
 }
 
-#services_slider .active:nth-child(1),
-.owl-item:not(.active) + .owl-item.active{
+#services_slider .owl-item.full-op{
   opacity: 1 !important;
 }
 

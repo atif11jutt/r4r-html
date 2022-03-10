@@ -151,6 +151,8 @@ $(document).ready(function () {
     nav: true,
     items: 2,
     margin: 10,
+    touchDrag: false,
+    mouseDrag: false,
     responsiveClass: true,
     responsive: {
       0: {
@@ -174,14 +176,22 @@ $(document).ready(function () {
     
   });
 
-  $("#services_slider").on('change.owl.carousel', function(e) {
-    console.log(e)
-    if (e.namespace && e.property.name === 'position' 
-    && e.relatedTarget.relative(e.property.value) === e.relatedTarget.items().length - 1) {
-    // put your stuff here ...
-    console.log('last slide')
-    }
-    });
+  $("#services_slider").find(".owl-item.active").first().addClass("full-op");
+
+  $("#services_slider .owl-next").click(function(){
+    console.log($("#services_slider").find(".owl-item.full-op").next())
+    if($("#services_slider").find(".owl-item.full-op").next().length)
+    $("#services_slider").find(".owl-item.full-op").removeClass("full-op").next().addClass("full-op");
+  })
+
+  $("#services_slider .owl-prev").click(function(){
+    console.log($("#services_slider").find(".owl-item.full-op").prev())
+    if($("#services_slider").find(".owl-item.full-op").prev().length)
+    $("#services_slider").find(".owl-item.full-op").removeClass("full-op").prev().addClass("full-op");
+  })
+
+
+
 
   // side nav open/close
 
