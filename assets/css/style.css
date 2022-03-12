@@ -855,6 +855,10 @@ footer {
   margin-bottom: 0.73em;
 }
 
+.h2.schwarz.margin-bottom {
+  margin-bottom: 2.34em;
+}
+
 
 .projekt-10-doppelbild {
   display: -webkit-box;
@@ -1148,8 +1152,10 @@ footer {
   color: #000;
   -webkit-column-count: 3;
   column-count: 3;
-  -webkit-column-gap: 3.12em;
-  column-gap: 3.12em;
+  /* -webkit-column-gap: 3.12em;
+  column-gap: 3.12em; */
+  -webkit-column-gap: 17em;
+  column-gap: 17em;
 }
 
 .p._3-spalten a {
@@ -1157,7 +1163,13 @@ footer {
 }
 
 
-
+.p._3-spalten h4 {
+  padding-left: 1.3em;
+  background-image: url(../images/diagonal-arrow-black.png);
+  background-position: 0 57%;
+  background-size: 0.7em;
+  background-repeat: no-repeat;
+}
 
 
 
