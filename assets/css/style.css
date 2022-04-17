@@ -1492,6 +1492,10 @@ ul.accordion li.show a.toggle img {
   background-color: #fff;
 }
 
+.bg-black .post{
+  background-color: #000;
+}
+
 .post-hover {
   position: absolute;
   width: 100%;
