@@ -1049,13 +1049,6 @@ footer {
   object-fit: cover;
 }
 
-.projekte-10-conatiner-rechts {
-  display: block;
-  width: 50vw;
-  height: 50vw;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
 
 ._10-bild {
   width: 100%;
