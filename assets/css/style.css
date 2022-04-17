@@ -1489,6 +1489,7 @@ ul.accordion li.show a.toggle img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-color: #fff;
 }
 
 .post-hover {
