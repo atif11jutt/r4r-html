@@ -1042,7 +1042,7 @@ footer {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background-image: url(https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg);
+  /* background-image: url(https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg); */
   background-position: 50% 50%;
   background-size: cover;
   -o-object-fit: cover;
