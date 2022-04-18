@@ -1607,6 +1607,7 @@ ul.accordion li.show a.toggle img {
 
 .image img {
   transition: 0.3s;
+  width: 100%;
 }
 
 .item:hover img {
