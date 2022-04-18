@@ -1701,6 +1701,9 @@ ul.accordion li.show a.toggle img {
   -o-object-position: 0% 50%;
   object-position: 0% 50%;
 }
+.footer-links > div:hover a{
+  color: red !important;
+}
 .footer-links a {
   font-size: 1.72em;
   line-height: 1;
@@ -1708,6 +1711,7 @@ ul.accordion li.show a.toggle img {
   letter-spacing: 1px;
   margin-bottom: 0.45em;
   display: block;
+  transition: 0.3s;
 }
 
 .footer-address > div {
