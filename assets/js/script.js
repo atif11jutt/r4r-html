@@ -186,6 +186,13 @@ $(document).ready(function () {
     
   });
 
+
+  /* ----------- Counters ---------- */
+  $(".counters").appear(function () {
+    $(".count_nums").countTo();
+});
+
+
   // add class on page load - in the first item
   $("#services_slider").find(".owl-item.active").first().addClass("full-op");
 

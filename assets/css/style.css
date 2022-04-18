@@ -2104,3 +2104,29 @@ ul.social-icons-simple li a::before {
 
 @media (min-device-width: 320px) and (max-device-width: 700px) {
 }
+
+
+
+.padding {
+  padding: 7.5rem 0;
+}
+
+
+@media screen and (max-width: 1266px){
+.counters .count_nums {
+    font-size: 5rem;
+}
+}
+
+@media screen and (max-width: 1400px){
+.counters .count_nums {
+    font-size: 5.625rem;
+}
+}
+.counters .count_nums, .counters i {
+    vertical-align: middle;
+}
+.counters .count_nums {
+    font-size: 6.25rem;
+    line-height: 5rem;
+}

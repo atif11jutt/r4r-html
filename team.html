@@ -22,6 +22,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- OWL slider JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery-countTo.js"></script>
     <!--wow js-->
     <script src="assets/js/wow.js"></script>
     <!-- custom JS -->
@@ -41,18 +43,21 @@
                     <a href="team.html" class="lang" data-de="Team" data-pl="Zespół" data-en="Team">Team</a>
                 </div>
                 <div>
-                    <a href="contact.html" class="lang" data-de="Kontakt" data-pl="Kontakt" data-en="Contact">Kontakt</a>
+                    <a href="contact.html" class="lang" data-de="Kontakt" data-pl="Kontakt"
+                        data-en="Contact">Kontakt</a>
                 </div>
                 <div>
                     <a href="jobs.html" class="lang" data-de="Jobs" data-pl="Praca" data-en="Jobs">Jobs</a>
                 </div>
             </div>
-    
-            <a href="tel:4917676706137" class="button button-black mt-2 lang-mail" style="margin-right: 1em;" data-de="tel:030515655240"
-                data-pl="tel:48222478181" data-en="tel:48222478181">
-                <svg version="1.1" id="phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" viewBox="0 0 100 100" style="enable-background: new 0 0 100 100" xml:space="preserve">
-                    <path d="M87.4,100h-1.1c-15.1-1.6-29.6-6.7-42.3-15C32.4,77.7,22.5,68,15.1,56.5C6.9,43.6,1.7,29,0.1,13.8c-0.3-3.3,0.8-6.7,2.9-9.3
+
+            <a href="tel:4917676706137" class="button button-black mt-2 lang-mail" style="margin-right: 1em;"
+                data-de="tel:030515655240" data-pl="tel:48222478181" data-en="tel:48222478181">
+                <svg version="1.1" id="phone" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+                    style="enable-background: new 0 0 100 100" xml:space="preserve">
+                    <path
+                        d="M87.4,100h-1.1c-15.1-1.6-29.6-6.7-42.3-15C32.4,77.7,22.5,68,15.1,56.5C6.9,43.6,1.7,29,0.1,13.8c-0.3-3.3,0.8-6.7,2.9-9.3
                         C5.2,2,8.3,0.4,11.6,0.1h15.3C33.2,0,38.6,4.6,39.6,10.9c0.6,4.3,1.6,8.6,3.2,12.7c1.7,4.6,0.6,9.8-2.9,13.3l-4.2,4.2
                         c5.9,9.5,13.9,17.6,23.5,23.5l4.2-4.2c3.4-3.2,8.3-4.3,12.7-2.8c4.1,1.5,8.4,2.5,12.7,3c6.3,0.9,11,6.3,10.9,12.7v13.9
                         c0,7-5.7,12.7-12.7,12.7L87.4,100z M26.9,5.8H12.7c-1.8,0.1-3.6,0.9-4.8,2.3c-1,1.3-1.5,2.9-1.4,4.6C8,26.7,12.8,40.1,20.4,52
@@ -64,13 +69,13 @@
                 <span class="lang" data-de="030 515 655 240" data-pl="+48 22 24 78 181" data-en="+48 22 24 78 181">+49
                     176 767 06 137</span>
             </a>
-    
+
             <a href="mailto:info@research4retail.de" class="button button-black mt-2 lang-mail"
                 data-de="mailto:info@research4retail.de" data-pl="mailto:info@research4retail.pl"
                 data-en="mailto:info@research4retail.com">
-                <svg version="1.1" id="Mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" viewBox="0 0 100 100" style="enable-background: new 0 0 100 100; width: 31px"
-                    xml:space="preserve">
+                <svg version="1.1" id="Mail" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+                    style="enable-background: new 0 0 100 100; width: 31px" xml:space="preserve">
                     <path
                         d="M96.5,14.4H3.5c-1.6,0-2.8,1.3-2.8,2.8v65.6c0,1.6,1.3,2.8,2.8,2.8h92.9c1.6,0,2.8-1.3,2.8-2.8V17.2
                         C99.3,15.6,98,14.4,96.5,14.4z M93.6,20v5.6l0,0L50,55.3L6.8,25.6l0,0V20H93.6z M6.4,80V32.6L50,62.2l43.6-29.5V80H6.4z">
@@ -144,21 +149,22 @@
                 <div class="hero__container subpage subpage--projekt">
                     <div class="hero__wrapper">
                         <div class="hero__content titel">
-                            <h2 class="h2 lang" data-de="Wir analysieren + forschen mit Herzblut + Mut"
-                                data-pl="Analizujemy + badamy z sercem i duszą + odwagą"
-                                data-en="We analyze + research with heart + courage">
-                                Wir analysieren + forschen mit Herzblut + Mut
+                            <h2 class="h2 lang" data-de="Wir sind Research4Retail" data-pl="My jesteśmy Research4Retail"
+                                data-en="We are Research4Retail">
+
                             </h2>
                         </div>
                         <div class="hero__content last">
                             <p class="services_para h3 lang"
-                                data-de="R4R ist ein seit 20 Jahren existierendes Unternehmen, das sich zur Aufgabe gemacht hat neue Maßstäbe in Marktanalysen und Distributionskontrolle zu setzen. Unsere Strategien und Konzepte wecken Glaubwürdigkeit, schaffen Vertrauen und schlagen das Kapitel auf für eine noch nie da gewesene Gewissheit."
-                                data-pl="R4R jest firmą istniejącą od 20 lat, która wyznacza nowe standardy w analizie rynku i kontroli dystrybucji. Nasze strategie i koncepcje wzbudzają wiarygodność, budują zaufanie i otwierają rozdział dla bezprecedensowej pewności."
-                                data-en="R4R is a company that has been in existence for 20 years and has made it its business to set new standards in market analysis and distribution control. Our strategies and concepts inspire credibility, build trust and open the chapter for unprecedented certainty.">
-                                R4R is a company that has been in existence for 20 years and has made it its business to
-                                set
-                                new standards in market analysis and distribution control. Our strategies and concepts
-                                inspire credibility, build trust and open the chapter for unprecedented certainty.
+                                data-de="Immer mit dem richtigen Riecher und Biss überlegen und planen wir unsere Arbeiten mit dem Kunden.
+                                Es macht viel mehr Freude, wenn der Kunde weiß wer sich um seine Angelegenheiten kümmert.
+                                Gemeinsam planen und überwachen wir deine Wünsche aus unseren Räumlichkeiten in Berlin."
+                                data-pl="Zawsze myślimy i planujemy naszą pracę z klientem z właściwym instynktem i wyczuciem.
+                                O wiele przyjemniej jest, gdy klient wie, kto zajmuje się jego sprawami.
+                                Wspólnie planujemy i nadzorujemy realizację Państwa życzeń z naszej siedziby w Berlinie." data-en="Always with the right nose and bite we consider and plan our work with the customer.
+                                It is much more fun when the customer knows who takes care of his affairs.
+                                Together we plan and monitor your wishes from our premises in Berlin.">
+
                             </p>
                         </div>
                     </div>
@@ -168,8 +174,8 @@
         <!--  -->
         <a class="fixed_bar_home pagescroll" href="#services">
             <img src="assets/images/diagonal-arrow-black.png" alt="image" />
-            <h2 class="lang h3 text-black" data-de="Unsere Dienstleistungen" data-pl="Nasze usługi"
-                data-en="Our team"></h2>
+            <h2 class="lang h3 text-black" data-de="Unsere Dienstleistungen" data-pl="Nasze usługi" data-en="Our team">
+            </h2>
         </a>
     </div>
 
@@ -180,144 +186,265 @@
             <div class="row equal-shadow-team">
                 <!--item 1-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 pb-4">
-                   <div class="team-box wow fadeIn" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeIn;">
-                      <div class="image">
-                         <img src="assets/images/team-1.jpg" alt="">
-                      </div>
-                      <div class="team-content">
-                         <h4 class="darkcolor">Jessica Twain</h4>
-                         <p>Agency Owner</p>
-                         <ul class="social-icons-simple">
-                            <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                            <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                            <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                         </ul>
-                      </div>
-                   </div>
+                    <div class="team-box wow fadeIn" data-wow-delay="300ms"
+                        style="visibility: visible; animation-delay: 300ms; animation-name: fadeIn;">
+                        <div class="image">
+                            <img src="assets/images/team-1.jpg" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h4 class="darkcolor">Jessica Twain</h4>
+                            <p>Agency Owner</p>
+                            <ul class="social-icons-simple">
+                                <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a>
+                                </li>
+                                <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a>
+                                </li>
+                                <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <!--item 2-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 pb-4">
-                   <div class="team-box wow fadeIn" data-wow-delay="350ms" style="visibility: visible; animation-delay: 350ms; animation-name: fadeIn;">
-                      <div class="image">
-                         <img src="assets/images/team-2.jpg" alt="">
-                      </div>
-                      <div class="team-content">
-                         <h4 class="darkcolor">Jessica Twain</h4>
-                         <p>Agency Owner</p>
-                         <ul class="social-icons-simple">
-                            <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                            <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                            <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                         </ul>
-                      </div>
-                   </div>
+                    <div class="team-box wow fadeIn" data-wow-delay="350ms"
+                        style="visibility: visible; animation-delay: 350ms; animation-name: fadeIn;">
+                        <div class="image">
+                            <img src="assets/images/team-2.jpg" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h4 class="darkcolor">Jessica Twain</h4>
+                            <p>Agency Owner</p>
+                            <ul class="social-icons-simple">
+                                <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a>
+                                </li>
+                                <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a>
+                                </li>
+                                <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <!--item 3-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 pb-4">
-                   <div class="team-box wow fadeIn" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeIn;">
-                      <div class="image">
-                         <img src="assets/images/team-3.jpg" alt="">
-                      </div>
-                      <div class="team-content">
-                         <h4 class="darkcolor">Jessica Twain</h4>
-                         <p>Agency Owner</p>
-                         <ul class="social-icons-simple">
-                            <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                            <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                            <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                         </ul>
-                      </div>
-                   </div>
+                    <div class="team-box wow fadeIn" data-wow-delay="400ms"
+                        style="visibility: visible; animation-delay: 400ms; animation-name: fadeIn;">
+                        <div class="image">
+                            <img src="assets/images/team-3.jpg" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h4 class="darkcolor">Jessica Twain</h4>
+                            <p>Agency Owner</p>
+                            <ul class="social-icons-simple">
+                                <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a>
+                                </li>
+                                <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a>
+                                </li>
+                                <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <!--item 4-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 pb-4">
-                   <div class="team-box wow fadeIn" data-wow-delay="450ms" style="visibility: visible; animation-delay: 450ms; animation-name: fadeIn;">
-                      <div class="image">
-                         <img src="assets/images/team-4.jpg" alt="">
-                      </div>
-                      <div class="team-content">
-                         <h4 class="darkcolor">Jessica Twain</h4>
-                         <p>Agency Owner</p>
-                         <ul class="social-icons-simple">
-                            <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                            <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                            <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                         </ul>
-                      </div>
-                   </div>
+                    <div class="team-box wow fadeIn" data-wow-delay="450ms"
+                        style="visibility: visible; animation-delay: 450ms; animation-name: fadeIn;">
+                        <div class="image">
+                            <img src="assets/images/team-4.jpg" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h4 class="darkcolor">Jessica Twain</h4>
+                            <p>Agency Owner</p>
+                            <ul class="social-icons-simple">
+                                <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a>
+                                </li>
+                                <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a>
+                                </li>
+                                <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <!--item 5-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 pb-4">
-                   <div class="team-box wow fadeIn" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeIn;">
-                      <div class="image">
-                         <img src="assets/images/team-4.jpg" alt="">
-                      </div>
-                      <div class="team-content">
-                         <h4 class="darkcolor">Jessica Twain</h4>
-                         <p>Agency Owner</p>
-                         <ul class="social-icons-simple">
-                            <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                            <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                            <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                         </ul>
-                      </div>
-                   </div>
+                    <div class="team-box wow fadeIn" data-wow-delay="500ms"
+                        style="visibility: visible; animation-delay: 500ms; animation-name: fadeIn;">
+                        <div class="image">
+                            <img src="assets/images/team-4.jpg" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h4 class="darkcolor">Jessica Twain</h4>
+                            <p>Agency Owner</p>
+                            <ul class="social-icons-simple">
+                                <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a>
+                                </li>
+                                <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a>
+                                </li>
+                                <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <!--item 6-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 pb-4">
-                   <div class="team-box wow fadeIn" data-wow-delay="550ms" style="visibility: visible; animation-delay: 550ms; animation-name: fadeIn;">
-                      <div class="image">
-                         <img src="assets/images/team-3.jpg" alt="">
-                      </div>
-                      <div class="team-content">
-                         <h4 class="darkcolor">Jessica Twain</h4>
-                         <p>Agency Owner</p>
-                         <ul class="social-icons-simple">
-                            <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                            <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                            <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                         </ul>
-                      </div>
-                   </div>
+                    <div class="team-box wow fadeIn" data-wow-delay="550ms"
+                        style="visibility: visible; animation-delay: 550ms; animation-name: fadeIn;">
+                        <div class="image">
+                            <img src="assets/images/team-3.jpg" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h4 class="darkcolor">Jessica Twain</h4>
+                            <p>Agency Owner</p>
+                            <ul class="social-icons-simple">
+                                <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a>
+                                </li>
+                                <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a>
+                                </li>
+                                <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <!--item 7-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 pb-4">
-                   <div class="team-box wow fadeIn" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeIn;">
-                      <div class="image">
-                         <img src="assets/images/team-2.jpg" alt="">
-                      </div>
-                      <div class="team-content">
-                         <h4 class="darkcolor">Jessica Twain</h4>
-                         <p>Agency Owner</p>
-                         <ul class="social-icons-simple">
-                            <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                            <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                            <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                         </ul>
-                      </div>
-                   </div>
+                    <div class="team-box wow fadeIn" data-wow-delay="600ms"
+                        style="visibility: visible; animation-delay: 600ms; animation-name: fadeIn;">
+                        <div class="image">
+                            <img src="assets/images/team-2.jpg" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h4 class="darkcolor">Jessica Twain</h4>
+                            <p>Agency Owner</p>
+                            <ul class="social-icons-simple">
+                                <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a>
+                                </li>
+                                <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a>
+                                </li>
+                                <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <!--item 8-->
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 pb-4">
-                   <div class="team-box wow fadeIn" data-wow-delay="650ms" style="visibility: visible; animation-delay: 650ms; animation-name: fadeIn;">
-                      <div class="image">
-                         <img src="assets/images/team-1.jpg" alt="">
-                      </div>
-                      <div class="team-content">
-                         <h4 class="darkcolor">Jessica Twain</h4>
-                         <p>Agency Owner</p>
-                         <ul class="social-icons-simple">
-                            <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                            <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                            <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                         </ul>
-                      </div>
-                   </div>
+                    <div class="team-box wow fadeIn" data-wow-delay="650ms"
+                        style="visibility: visible; animation-delay: 650ms; animation-name: fadeIn;">
+                        <div class="image">
+                            <img src="assets/images/team-1.jpg" alt="">
+                        </div>
+                        <div class="team-content">
+                            <h4 class="darkcolor">Jessica Twain</h4>
+                            <p>Agency Owner</p>
+                            <ul class="social-icons-simple">
+                                <li><a class="facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a>
+                                </li>
+                                <li><a class="twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a>
+                                </li>
+                                <li><a class="insta" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-             </div>
+            </div>
 
         </div>
     </section>
+
+
+    <section id="bg-counters" class="padding bg-counters parallax"
+        style="background-image: url(&quot;https://trax.acrothemes.com/bootstrap-v5/images/counter-bg.jpg&quot;); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center 118.955px;">
+        <div class="container">
+            <div class="row align-items-center text-center text-white">
+                <div class="col-lg-4 col-md-4 col-sm-4 bottom10">
+                    <div class="counters whitecolor  top10 bottom10">
+                        <span class="count_nums font-light" data-to="2010" data-speed="2500">2010</span>
+                    </div>
+                    <h3 class="font-light whitecolor top20">Since We Started</h3>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <p class="whitecolor top20 bottom20 font-light title">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Nunc mauris arcu, lobortis id interdum vitae, interdum eget elit. </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 bottom10">
+                    <div class="counters whitecolor top10 bottom10">
+                        <span class="count_nums font-light" data-to="895" data-speed="2500">895</span>
+                    </div>
+                    <h3 class="font-light whitecolor top20">Since We Started</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="Partner" data-negative="no" class="section schwarz padding-top--100vh wf-section">
+        <div class="max-width">
+            <div data-w-id="8eccdb90-121e-00c7-bb65-31015c64d45c" class="partner__container"
+                style="transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+                <div class="partner__lead">
+                    <p class="h3">Im Team mit unseren Partnern formen wir Ideen und Konzepte zu strategisch relevanten
+                        Gesamtlösungen mit tiefem Verständnis für die Marke und viel Gespür fürs Design. So entwickeln
+                        wir gemeinsam Projekte, die uns und den Kunden Freude bereiten!</p>
+                </div>
+                <div class="w-layout-grid partner__grid">
+                    <div class="partner__content"
+                        style="transform: translate3d(0px, 10em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;">
+                        <a data-event-category="Partner" data-event-label="Medienagentur"
+                            href="https://www.mediaschneider.com/" target="_blank"
+                            class="partner__wrapper ga-event w-inline-block"><img
+                                src="https://assets-global.website-files.com/5ff7769216208856a313164d/5ff77692162088a6f41319c5_Mediaschneider_SW.svg"
+                                alt="Logo Mediaschneider" class="partner__logo mittel"></a></div>
+                    <div class="partner__content"
+                        style="transform: translate3d(0px, 10em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;">
+                        <a data-event-category="Partner" data-event-label="Webpartner" href="http://apload.ch"
+                            target="_blank" class="partner__wrapper w-inline-block"><img
+                                src="https://assets-global.website-files.com/5ff7769216208856a313164d/5ff776921620888843131a00_logo_apload_weiss.svg"
+                                alt="Logo apload internet agentur" class="partner__logo"></a></div>
+                    <div class="partner__content"
+                        style="transform: translate3d(0px, 10em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;">
+                        <a data-event-category="Partner" data-event-label="Fotografie" href="http://wolf-fotografie.ch"
+                            target="_blank" class="partner__wrapper ga-event w-inline-block"><img
+                                src="https://assets-global.website-files.com/5ff7769216208856a313164d/5ff7769216208837a0131959_Wolf_Logo_Weiss.png"
+                                sizes="(max-width: 767px) 70vw, (max-width: 991px) 348.359375px, (max-width: 1919px) 24vw, 377.3359375px"
+                                srcset="https://assets-global.website-files.com/5ff7769216208856a313164d/5ff7769216208837a0131959_Wolf_Logo_Weiss-p-500.png 500w, https://assets-global.website-files.com/5ff7769216208856a313164d/5ff7769216208837a0131959_Wolf_Logo_Weiss-p-800.png 800w, https://assets-global.website-files.com/5ff7769216208856a313164d/5ff7769216208837a0131959_Wolf_Logo_Weiss-p-1080.png 1080w, https://assets-global.website-files.com/5ff7769216208856a313164d/5ff7769216208837a0131959_Wolf_Logo_Weiss.png 2323w"
+                                alt="Logo Wolf Fotografie" class="partner__logo mittel"></a></div>
+                    <div class="partner__content"
+                        style="transform: translate3d(0px, 10em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;">
+                        <a data-event-category="Partner" data-event-label="Druckerei" href="https://www.voegeli.ch/"
+                            target="_blank" class="partner__wrapper ga-event w-inline-block"><img
+                                src="https://assets-global.website-files.com/5ff7769216208856a313164d/5ff7769216208866c9131a34_logo_voegeli_weiss.svg"
+                                alt="Logo Voegeli" class="partner__logo"></a></div>
+                    <div class="partner__content"
+                        style="transform: translate3d(0px, 10em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;">
+                        <a data-event-category="Partner" data-event-label="Texter" href="https://adrianportmann.com"
+                            target="_blank" class="partner__wrapper ga-event w-inline-block"><img
+                                src="https://assets-global.website-files.com/5ff7769216208856a313164d/5ff776921620880e5e131a35_Logo_Adrian_Portmann.svg"
+                                alt="Logo Adrian Portmann Textatelier" class="partner__logo mittel"></a></div>
+                    <div class="partner__content"
+                        style="transform: translate3d(0px, 10em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;">
+                        <a data-event-category="Partner" data-event-label="Werbetechnik"
+                            href="https://fischerschriften.ch/de/" target="_blank"
+                            class="partner__wrapper ga-event w-inline-block"><img
+                                src="https://assets-global.website-files.com/5ff7769216208856a313164d/5ff7769216208812f4131a2e_logo_fischerschriften_weiss.svg"
+                                alt="Logo Fischer Schriften" class="partner__logo gross"></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
 
 
 
@@ -392,8 +519,9 @@
                         </div>
                     </div>
                     <div class="copyright py-2">&copy; Research4Retail 2010-2022
-                            <a href="impressum.html" class="lang ml-3" data-en="Legal notice" data-de="Impressum" data-pl="Stopka redakcyjna">Impressum</a>
-                        </div>
+                        <a href="impressum.html" class="lang ml-3" data-en="Legal notice" data-de="Impressum"
+                            data-pl="Stopka redakcyjna">Impressum</a>
+                    </div>
                 </div>
 
             </div>
