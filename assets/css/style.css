@@ -1274,6 +1274,10 @@ ul.accordion li a.toggle {
   transition: 0.3s;
 }
 
+ul.accordion li.show a.toggle{
+  border-color: red;
+}
+
 .bg-black .accordion li a.toggle {
   color: #fff;
   border-top: 2px solid #fff;
