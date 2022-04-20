@@ -1838,6 +1838,7 @@ ul.accordion li.show a.toggle img {
 
 .team-content h4{
   margin-bottom: 0;
+  font-size: 1.2rem;
 }
 
 .team-box:hover .team-content * {
@@ -1883,6 +1884,10 @@ ul.accordion li.show a.toggle img {
   transform: scale(1.2);
 }
 
+
+.section.schwarz {
+  padding: 0;
+}
 
 
 /* ----- Social Icons ----- */
@@ -2129,4 +2134,46 @@ ul.social-icons-simple li a::before {
 .counters .count_nums {
     font-size: 6.25rem;
     line-height: 5rem;
+}
+
+
+
+.partner__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 11.09em 13.75em 12.89em 7.58em;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.partner__lead {
+  width: 41.64em;
+  margin-right: 10.16em;
+}
+
+.section {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  background-color: #000;
+}
+
+@media screen and (max-width: 991px){
+.partner__container {
+    padding: 6em 6em 8em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.partner__lead {
+  width: 100%;
+}
 }
