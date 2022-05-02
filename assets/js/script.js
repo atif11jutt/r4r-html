@@ -188,10 +188,16 @@ $(document).ready(function () {
 
 
   /* ----------- Counters ---------- */
-  $(".counters").appear(function () {
-    $(".count_nums").countTo();
-});
+//   $(".counters").appear(function () {
+//     $(".count_nums").countTo();
+// });
 
+
+$("#footer_logo img").on("mouseover",function(){
+  $(this).attr("src","assets/images/logo-red.png")
+}).on("mouseout", function(){
+  $(this).attr("src","assets/images/logo-white.png")
+})
 
   // add class on page load - in the first item
   $("#services_slider").find(".owl-item.active").first().addClass("full-op");
