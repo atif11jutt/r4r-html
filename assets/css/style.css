@@ -1708,14 +1708,16 @@ ul.accordion li.show a.toggle img {
   transition: 0.5s;
 }
 
-.bg-black .owl-next:hover {
+.owl-next:hover {
   background-image: url(../images/arow-slider-red.svg) !important;
   transform: scale(1.2);
 }
-.bg-black .owl-prev:hover {
+.owl-prev:hover {
   background-image: url(../images/arow-slider-red.svg) !important;
   transform: scale(1.2) rotate(-180deg) !important;
 }
+
+
 
 .owl-prev {
   margin-right: 1.56em;
