@@ -187,10 +187,7 @@ $(document).ready(function () {
   });
 
 
-  /* ----------- Counters ---------- */
-  $(".counters").appear(function () {
-    $(".count_nums").countTo();
-});
+ 
 
 
 $("#footer_logo img").on("mouseover",function(){
