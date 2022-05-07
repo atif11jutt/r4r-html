@@ -2033,6 +2033,17 @@ ul.social-icons-simple li a::before {
 
 
 
+.blog-slider__container {
+  overflow: hidden;
+  padding: 11.72em 7.58em;
+}
+
+.blog__slider {
+  margin-top: 7.58em;
+}
+
+
+
 
 
 
