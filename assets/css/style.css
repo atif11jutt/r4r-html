@@ -2047,7 +2047,24 @@ ul.social-icons-simple li a::before {
   width: 30em;
 }
 
+.blog__slider h3{
+  margin-top: 0.4em;
+}
 
+
+#home_slider{
+  width: calc(100% + 17.6em);
+  margin-left: -8.8em;
+}
+
+#home_slider .owl-nav{
+  padding-right: 8.8em;
+}
+
+#home_slider .owl-stage{
+  margin-left: 8.8em;
+  margin-right: 8.8em;
+}
 
 
 
