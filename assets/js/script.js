@@ -132,7 +132,7 @@ $(document).ready(function () {
     loop: true,
     nav: true,
     items: 4,
-    margin: 10,
+    margin: 15,
     responsiveClass: true,
     responsive: {
       0: {
