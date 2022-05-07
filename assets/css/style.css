@@ -2067,6 +2067,33 @@ ul.social-icons-simple li a::before {
     flex-direction: column;
   }
 
+  .hero__container.blog {
+    padding-right: 6em;
+    padding-left: 6em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.hero.subpage {
+    padding-right: 0;
+}
+
+.section {
+  height: 130%;
+}
+
+.blog-inhalt__container, .blog-slider__container, .impressum__container, .more-blog__container, .projekt-06-kundenmeinung__container {
+  padding-right: 6em;
+  padding-left: 6em;
+}
+
   .hero__content.titel {
     width: 100%;
   }
