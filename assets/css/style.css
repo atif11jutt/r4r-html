@@ -2063,9 +2063,14 @@ ul.social-icons-simple li a::before {
 
 #home_slider .owl-stage{
   margin-left: 8.8em;
-  margin-right: 8.8em;
+  margin-right: -8.8em;
 }
 
+
+#home_slider .hide{
+  opacity: 0;
+  visibility: hidden;
+}
 
 
 
