@@ -1671,6 +1671,14 @@ ul.accordion li.show a.toggle img {
   width: 40%;
 }
 
+#Kunden .p._3-spalten a{
+  transition: 0.3s;
+}
+
+#Kunden .p._3-spalten a:hover{
+  color: red !important;
+}
+
 /* posts */
 
 .image {
