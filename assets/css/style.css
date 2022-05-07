@@ -2052,27 +2052,40 @@ ul.social-icons-simple li a::before {
 }
 
 
-#home_slider{
+.home_slider{
   width: calc(100% + 17.6em);
   margin-left: -8.8em;
 }
 
-#home_slider .owl-nav{
+.home_slider .owl-nav{
   padding-right: 8.8em;
   margin-top: 5em;
 }
 
-#home_slider .owl-stage{
+.home_slider .owl-stage{
   margin-left: 8.8em;
   margin-right: -8.8em;
 }
 
 
-#home_slider .hide{
+.home_slider .hide{
   opacity: 0;
   visibility: hidden;
 }
 
+.lang-hide{
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  margin-top: 0;
+}
+
+.visible{
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  margin-top: 7.58em;
+}
 
 
 

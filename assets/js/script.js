@@ -89,6 +89,13 @@ $(document).ready(function () {
       }
     });
 
+    $(".lang-hide").each(function () {
+      $(this).removeClass("visible");
+      if ($(this).hasClass(lang)) {
+        $(this).addClass("visible");
+      }
+    });
+
     $(".lang-mail").each(function () {
       $(this).attr("href", $(this).data(lang));
     });
@@ -128,7 +135,7 @@ $(document).ready(function () {
   });
 
   // slider
-  $("#home_slider").owlCarousel({
+  $(".home_slider").owlCarousel({
     loop: true,
     nav: true,
     items: 4,
