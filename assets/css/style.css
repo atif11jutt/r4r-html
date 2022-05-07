@@ -193,6 +193,10 @@ body:not(.home) .fixed_bar_home {
   color: #000 !important;
 }
 
+.text-red {
+  color: red !important;
+}
+
 #menu .links a {
   color: #000 !important;
   font-size: 7.5em;
