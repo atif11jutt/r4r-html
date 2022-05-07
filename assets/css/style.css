@@ -1659,6 +1659,12 @@ ul.accordion li.show a.toggle img {
 
 .company_icon img {
   width: 70%;
+  transition: 0.3s;
+  filter: grayscale(1);
+}
+
+.company_icon img:hover{
+  filter: grayscale(0);
 }
 
 .company_icon.smaller img {
