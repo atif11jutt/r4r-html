@@ -11,7 +11,7 @@ html {
   height: 100%;
 }
 body {
-  font-size: 0.95vw;
+  font-size: 1vw;
   -webkit-font-smoothing: antialiased;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -2063,7 +2063,7 @@ ul.social-icons-simple li a::before {
   margin-right: -8.8em;
 }
 
-.home_slider .hide {
+.home_slider .hide, .item.hide {
   opacity: 0;
   visibility: hidden;
 }

@@ -209,7 +209,7 @@ $("#footer_logo img").on("mouseover",function(){
   // next button
   $("#services_slider .owl-next").click(function(){
     console.log($("#services_slider").find(".owl-item.full-op").next())
-    if($("#services_slider").find(".owl-item.full-op").next().length)
+    if($("#services_slider").find(".owl-item.full-op").next().length && !$("#services_slider").find(".owl-item.full-op").next().find(".item").hasClass("hide"))
     $("#services_slider").find(".owl-item.full-op").removeClass("full-op").next().addClass("full-op");
   })
 
