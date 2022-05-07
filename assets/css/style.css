@@ -1660,11 +1660,11 @@ ul.accordion li.show a.toggle img {
 .company_icon img {
   width: 70%;
   transition: 0.3s;
-  filter: grayscale(1);
+  filter: grayscale(1) brightness(1.35);
 }
 
 .company_icon img:hover{
-  filter: grayscale(0);
+  filter: grayscale(0) brightness(1);
 }
 
 .company_icon.smaller img {
