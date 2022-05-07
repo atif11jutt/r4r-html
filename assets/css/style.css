@@ -2073,6 +2073,18 @@ ul.social-icons-simple li a::before {
   visibility: hidden;
 }
 
+.home_slider .item span{
+  transition: 0.3s;
+  font-size: 1.25em;
+  line-height: 1.4em;
+  font-weight: 500;
+  letter-spacing: .3px;
+  padding-top: 0.5em;
+}
+.home_slider .item:hover span{
+  color: red;
+}
+
 .lang-hide{
   opacity: 0;
   visibility: hidden;
@@ -2174,6 +2186,10 @@ ul.social-icons-simple li a::before {
 .button.ohne-kontur {
   padding: 0.39em 0;
   border-style: none;
+}
+
+.blog__link:hover .slider-pill_photo {
+  transform: scale(1.2);
 }
 
 .blog__link:hover .ohne-kontur{
