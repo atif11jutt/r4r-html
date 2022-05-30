@@ -1,12 +1,12 @@
 $(document).ready(function () {
   // logo animation
   let winWidth = $("body").width();
-  console.log(winWidth)
+  console.log(winWidth);
   let logo_diff = 8;
-  if(winWidth <= 1024){
+  if (winWidth <= 1024) {
     logo_diff = 7.5;
   }
-  
+
   //
   let diff = 35;
   logo_diff += diff;
@@ -107,7 +107,6 @@ $(document).ready(function () {
     $(".lang-post-id").each(function () {
       $(this).attr("id", $(this).data(lang));
     });
-
   }
 
   /*Wow Animations*/
@@ -190,38 +189,47 @@ $(document).ready(function () {
         loop: false,
       },
     },
-    
   });
 
-
- 
-
-
-$("#footer_logo img").on("mouseover",function(){
-  $(this).attr("src","assets/images/logo-red.png")
-}).on("mouseout", function(){
-  $(this).attr("src","assets/images/logo-white.png")
-})
+  $("#footer_logo img")
+    .on("mouseover", function () {
+      $(this).attr("src", "assets/images/logo-red.png");
+    })
+    .on("mouseout", function () {
+      $(this).attr("src", "assets/images/logo-white.png");
+    });
 
   // add class on page load - in the first item
   $("#services_slider").find(".owl-item.active").first().addClass("full-op");
 
   // next button
-  $("#services_slider .owl-next").click(function(){
-    console.log($("#services_slider").find(".owl-item.full-op").next())
-    if($("#services_slider").find(".owl-item.full-op").next().length && !$("#services_slider").find(".owl-item.full-op").next().find(".item").hasClass("hide"))
-    $("#services_slider").find(".owl-item.full-op").removeClass("full-op").next().addClass("full-op");
-  })
+  $("#services_slider .owl-next").click(function () {
+    console.log($("#services_slider").find(".owl-item.full-op").next());
+    if (
+      $("#services_slider").find(".owl-item.full-op").next().length &&
+      !$("#services_slider")
+        .find(".owl-item.full-op")
+        .next()
+        .find(".item")
+        .hasClass("hide")
+    )
+      $("#services_slider")
+        .find(".owl-item.full-op")
+        .removeClass("full-op")
+        .next()
+        .addClass("full-op");
+  });
 
   // prev button
-  $("#services_slider .owl-prev").click(function(){
-    console.log($("#services_slider").find(".owl-item.full-op").prev())
-    if($("#services_slider").find(".owl-item.full-op").prev().length)
-    $("#services_slider").find(".owl-item.full-op").removeClass("full-op").prev().addClass("full-op");
-  })
-
-
-
+  $("#services_slider .owl-prev").click(function () {
+    console.log($("#services_slider").find(".owl-item.full-op").prev());
+    if ($("#services_slider").find(".owl-item.full-op").prev().length)
+      $("#services_slider")
+        .find(".owl-item.full-op")
+        .removeClass("full-op")
+        .prev()
+        .addClass("full-op");
+  });
 
   // side nav open/close
   $("#nav_opener").click(function (e) {
@@ -236,8 +244,49 @@ $("#footer_logo img").on("mouseover",function(){
     e.preventDefault();
     $(this).parent().toggleClass("show");
     var inner = $(this).next();
-    inner.slideToggle(450, function(){
-        inner.toggleClass("fadingIn")
+    inner.slideToggle(450, function () {
+      inner.toggleClass("fadingIn");
     });
   });
+
+  
+
+  $.ajax({
+    url: "http://ip-api.com/json",
+    type: "GET",
+    success: function (json) {
+      let curCountry = json.country;
+      console.log(curCountry);
+
+      if (curCountry == "Germany") {
+        $("#lang .de:not(.active)").click();
+      }else if (curCountry == "Poland") {
+        $("#lang .pl:not(.active)").click();
+      }else {
+        $("#lang .en:not(.active)").click();
+      }
+    },
+    error: function (err) {
+      console.log("Request failed, error= " + err);
+    },
+  });
+
+
+    
+  
+  
+  function cookiesPolicyBar(){
+      // Check cookie 
+      if ($.cookie('yourCookieName') != "active") $('#cookieAcceptBar').show(); 
+      //Assign cookie on click
+      $('#cookieAcceptBarConfirm').on('click',function(){
+          $.cookie('yourCookieName', 'active', { expires: 1 }); // cookie will expire in one day
+          $('#cookieAcceptBar').fadeOut();
+      });
+  }
+
+
+  cookiesPolicyBar()
+
+  
 });

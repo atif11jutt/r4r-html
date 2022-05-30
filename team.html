@@ -22,6 +22,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- OWL slider JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="assets/js/jquery.appear.js"></script>
     <script src="assets/js/jquery-countTo.js"></script>
     <!--wow js-->
@@ -189,7 +190,7 @@
                     <div class="team-box wow fadeIn" data-wow-delay="300ms"
                         style="visibility: visible; animation-delay: 300ms; animation-name: fadeIn;">
                         <div class="image">
-                            <img src="assets/images/team-1.jpg" alt="">
+                            <img src="assets/images/team/ceo.png" alt="">
                         </div>
                         <div class="team-content">
                             <h4 class="darkcolor">Damian Wroblewski</h4>
@@ -213,7 +214,7 @@
                     <div class="team-box wow fadeIn" data-wow-delay="400ms"
                         style="visibility: visible; animation-delay: 400ms; animation-name: fadeIn;">
                         <div class="image">
-                            <img src="assets/images/team-2.jpg" alt="">
+                            <img src="assets/images/team/larisch.png" alt="">
                         </div>
                         <div class="team-content">
                             <h4 class="darkcolor">Alexander Larisch</h4>
@@ -237,10 +238,10 @@
                     <div class="team-box wow fadeIn" data-wow-delay="500ms"
                         style="visibility: visible; animation-delay: 500ms; animation-name: fadeIn;">
                         <div class="image">
-                            <img src="assets/images/team-3.jpg" alt="">
+                            <img src="assets/images/team/no_image.png" alt="">
                         </div>
                         <div class="team-content">
-                            <h4 class="darkcolor">Celio Machiano</h4>
+                            <h4 class="darkcolor">Celio Machiana</h4>
                             <p class="lang" data-en="Trainee" data-de="Praktikant" data-pl="Praktykant"></p>
                             <ul class="social-icons-simple">
                                 <li><a href="tel:030515655240">
@@ -260,7 +261,7 @@
                     <div class="team-box wow fadeIn" data-wow-delay="600ms"
                         style="visibility: visible; animation-delay: 600ms; animation-name: fadeIn;">
                         <div class="image">
-                            <img src="assets/images/team-4.jpg" alt="">
+                            <img src="assets/images/team/krys.png" alt="">
                         </div>
                         <div class="team-content">
                             <h4 class="darkcolor">Krystian Wroblewski</h4>
@@ -402,6 +403,43 @@
 
 
 
+    <div id="cookieAcceptBar" class="cookieAcceptBar">
+        Before browse our site, please accept our <a href="#">cookies policy</a><br> <button id="cookieAcceptBarConfirm" class="btn btn-success">Accept and close this alert</button>
+      </div>
+
+      <style>
+        .cookieAcceptBar {
+          display:none;
+          position: fixed;
+          top: 50%;
+          left:0;
+          right: 0;
+          text-align: center;
+          background-color: #333;
+          color: #fff;
+          padding: 20px 0;
+          z-index: 99999;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+        }
+        
+        .cookieAcceptBar a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        
+        button {
+          cursor: pointer;
+          border: none;
+          background-color: #2387c0;
+          color: #fff;
+          text-transform: uppercase;
+          margin-top: 10px;
+          height: 40px;
+          line-height: 40px;
+          padding: 0 20px;
+        }</style>
 
     <!-- footer -->
 
