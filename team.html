@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <!-- custom CSS -->
-    <link rel="stylesheet" href="assets/font/stylesheet.css" />
+    <!-- <link rel="stylesheet" href="assets/font/stylesheet.css" /> -->
 
     <!-- Javascript files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -424,43 +424,184 @@
 
 
 
-    <div id="cookieAcceptBar" class="cookieAcceptBar">
-        Before browse our site, please accept our <a href="#">cookies policy</a><br> <button id="cookieAcceptBarConfirm" class="btn btn-success">Accept and close this alert</button>
-      </div>
+    <div class="modal" id="cookieAcceptPopup">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
 
-      <style>
-        .cookieAcceptBar {
-          display:none;
-          position: fixed;
-          top: 50%;
-          left:0;
-          right: 0;
-          text-align: center;
-          background-color: #333;
-          color: #fff;
-          padding: 20px 0;
-          z-index: 99999;
-          -webkit-transform: translateY(-50%);
-                  transform: translateY(-50%);
-        }
-        
-        .cookieAcceptBar a {
-          color: #fff;
-          text-decoration: none;
-          font-weight: bold;
-        }
-        
-        button {
-          cursor: pointer;
-          border: none;
-          background-color: #2387c0;
-          color: #fff;
-          text-transform: uppercase;
-          margin-top: 10px;
-          height: 40px;
-          line-height: 40px;
-          padding: 0 20px;
-        }</style>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <!-- <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body p-0">
+
+
+
+                    <ul class="nav nav_tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active lang" data-en="Consent" data-de="Zustimmung" data-pl="Zgoda"
+                                data-toggle="tab" href="#tab1">Consent</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lang" data-en="Details" data-de="Details" data-pl="Szczegóły"
+                                data-toggle="tab" href="#tab2">Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lang" data-en="About Cookies" data-de="Über Cookies" data-pl="O cookies"
+                                data-toggle="tab" href="#tab3">About</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane container py-4 active" id="tab1">
+                            <h5 class="h4 pb-2 text-black font-weight-bold lang" data-en="This website uses cookies"
+                                data-de="Diese Webseite verwendet Cookies" data-pl="Ta strona używa plików cookie">This
+                                website uses cookies</h5>
+                            <p class="p text-black lang"
+                                data-en="We use cookies to personalise content and ads, provide social media features and analyse traffic to our website. We also share information about your use of our website with our social media, advertising and analytics partners. Our partners may combine this information with other data that you have provided to them or that they have collected in the course of your use of the services."
+                                data-de="Wir verwenden Cookies, um Inhalte und Anzeigen zu personalisieren, Funktionen für soziale Medien anbieten zu können und die Zugriffe auf unsere Website zu analysieren. Außerdem geben wir Informationen zu Ihrer Verwendung unserer Website an unsere Partner für soziale Medien, Werbung und Analysen weiter. Unsere Partner führen diese Informationen möglicherweise mit weiteren Daten zusammen, die Sie ihnen bereitgestellt haben oder die sie im Rahmen Ihrer Nutzung der Dienste gesammelt haben."
+                                data-pl="Używamy plików cookie do personalizowania treści i reklam, udostępniania funkcji mediów społecznościowych oraz analizowania ruchu w naszej witrynie. Udostępniamy również informacje o korzystaniu z naszej witryny naszym partnerom z branży mediów społecznościowych, reklamy i analizy. Nasi partnerzy mogą łączyć te informacje z innymi danymi, które zostały im przekazane przez użytkownika lub które zostały zebrane w trakcie korzystania przez użytkownika z usług.">
+
+                            </p>
+
+                        </div>
+                        <div class="tab-pane container py-4 fade" id="tab2">
+
+                            <h4 class="h4 pb-2 text-black font-weight-bold lang" data-de="Notwendig" data-en="Necessary" data-pl="Konieczne">
+                                Necessary
+                            </h4>
+
+                            <p class="p text-black lang" data-de="Notwendige Cookies helfen dabei, eine Webseite nutzbar zu machen, indem sie Grundfunktionen wie Seitennavigation und Zugriff auf sichere Bereiche der Webseite ermöglichen. Die Webseite kann ohne diese Cookies nicht richtig funktionieren." data-en="Necessary cookies help make a website usable by enabling basic functions such as page navigation and access to secure areas of the website. The website cannot function properly without these cookies." data-pl="Niezbędne pliki cookie umożliwiają korzystanie z witryny internetowej poprzez udostępnienie podstawowych funkcji, takich jak nawigacja po stronie i dostęp do zabezpieczonych obszarów witryny. Bez tych plików cookie witryna nie może działać prawidłowo.">Necessary cookies help make a website usable by enabling basic functions such as page navigation and access to secure areas of the website. The website cannot function properly without these cookies</p>
+
+                            <br>
+                            
+                            <h4 class="h4 pb-2 text-black font-weight-bold lang">
+                                Marketing
+                            </h4>
+
+                            <p class="p text-black lang" data-de="Marketing-Cookies werden verwendet, um Besuchern auf Webseiten zu folgen. Die Absicht ist, Anzeigen zu zeigen, die relevant und ansprechend für den einzelnen Benutzer sind und daher wertvoller für Publisher und werbetreibende Drittparteien sind." data-en="Marketing cookies are used to follow visitors on websites. The intention is to show ads that are relevant and appealing to the individual user and therefore more valuable to publishers and advertising third parties." data-pl="Marketingowe pliki cookie są wykorzystywane do śledzenia odwiedzających strony internetowe. Celem jest wyświetlanie reklam, które są istotne i angażujące dla poszczególnych użytkowników, a tym samym bardziej wartościowe dla wydawców i reklamujących się stron trzecich.">Marketing cookies are used to follow visitors on websites. The intention is to show ads that are relevant and appealing to the individual user and therefore more valuable to publishers and advertising third parties</p>
+
+                            <br>
+                            
+                            <h4 class="h4 pb-2 text-black font-weight-bold lang" data-en="Analytics" data-de="Analyse" data-pl="Analityka">
+                                Analytics
+                            </h4>
+
+                            <p class="p text-black lang" data-en="Analytics cookies help website owners understand how visitors interact with websites by collecting and reporting information anonymously." data-de="Analyse-Cookies helfen Webseiten-Besitzern zu verstehen, wie Besucher mit Webseiten interagieren, indem Informationen anonym gesammelt und gemeldet werden." data-pl="Pliki cookie służące do analizy pomagają właścicielom witryn internetowych zrozumieć, w jaki sposób odwiedzający wchodzą w interakcje z witryną, poprzez anonimowe gromadzenie i raportowanie informacji.">Analytics cookies help website owners understand how visitors interact with websites by collecting and reporting information anonymously</p>
+
+
+                        </div>
+                        <div class="tab-pane container py-4 fade" id="tab3">
+                            <p class="p text-black lang-show en">
+                                Cookies are small text files that can be used by websites to make a user's experience
+                                more efficient.
+                                <br><br>
+
+                                The law states that we can store cookies on your device if they are strictly necessary
+                                for the operation of this site. For all other types of cookies we need your permission.
+
+                                <br><br>
+                                This site uses different types of cookies. Some cookies are placed by third party
+                                services that appear on our pages.
+
+                                <br><br>
+                                You can at any time change or withdraw your consent from the <a href="#">Cookie
+                                    Declaration</a> on our website.
+
+                                <br><br>
+                                Learn more about who we are, how you can contact us and how we process personal data in
+                                our <a href="impressum.html">Privacy Policy</a>.
+
+                                <br><br>
+                                Please state your consent ID and date when you contact us regarding your consent.
+                            </p>
+
+                            <p class="p text-black lang-show de">
+
+                                Cookies sind kleine Textdateien, die von Webseiten verwendet werden, um die
+                                Benutzererfahrung effizienter zu gestalten.
+
+                                <br><br>
+                                Laut Gesetz können wir Cookies auf Ihrem Gerät speichern, wenn diese für den Betrieb
+                                dieser Seite unbedingt notwendig sind. Für alle anderen Cookie-Typen benötigen wir Ihre
+                                Erlaubnis.
+
+                                <br><br>
+                                Diese Seite verwendet unterschiedliche Cookie-Typen. Einige Cookies werden von
+                                Drittparteien platziert, die auf unseren Seiten erscheinen.
+
+                                <br><br>
+                                Sie können Ihre Einwilligung jederzeit von der <a href="#">Cookie-Erklärung</a> auf
+                                unserer Website
+                                ändern oder widerrufen.
+
+                                <br><br>
+                                Erfahren Sie in unserer <a href="impressum.html">Datenschutzrichtlinie</a> mehr darüber,
+                                wer wir sind, wie Sie uns
+                                kontaktieren können und wie wir personenbezogene Daten verarbeiten.
+
+                                <br><br>
+                                Bitte geben Sie Ihre Einwilligungs-ID und das Datum an, wenn Sie uns bezüglich Ihrer
+                                Einwilligung kontaktieren.
+
+
+                            </p>
+
+                            <p class="p text-black lang-show pl">
+                                Pliki cookie to małe pliki tekstowe używane przez witryny internetowe w celu
+                                usprawnienia obsługi użytkowników.
+
+                                <br><br>
+                                Zgodnie z prawem możemy przechowywać pliki cookie na urządzeniu użytkownika, jeśli są
+                                one niezbędne do działania tej witryny. W przypadku wszystkich innych typów plików
+                                cookie wymagana jest zgoda użytkownika.
+
+                                <br><br>
+                                Ta witryna wykorzystuje różne rodzaje plików cookie. Niektóre pliki cookie są
+                                umieszczane przez osoby trzecie, które pojawiają się na naszych stronach.
+
+                                <br><br>
+                                Użytkownik może w każdej chwili zmienić lub wycofać swoją zgodę, korzystając z
+                                oświadczenia o plikach <a href="#">cookie</a> na naszej stronie.
+
+                                <br><br>
+                                Więcej informacji o tym, kim jesteśmy, jak można się z nami skontaktować i jak
+                                przetwarzamy dane osobowe, znajdziesz w naszej <a href="impressum.html">Polityce prywatności</a>.
+
+                                <br><br>
+                                Prosimy o podanie identyfikatora zgody oraz daty skontaktowania się z nami w sprawie
+                                zgody.
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-success" data-dismiss="modal"
+                        id="cookieAcceptBarConfirm">Accept</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 
+    <div id="cookieAcceptBar" class="cookieAcceptBar">
+
+        Before browse our site, please accept our <a href="#">cookies policy</a><br> <button id="cookieAcceptBarConfirm"
+            class="btn btn-success">Accept and close this alert</button>
+    </div> -->
+
+
 
     <!-- footer -->
 
@@ -556,20 +697,20 @@
             $(".count_nums").countTo();
         });
     </script>
-<!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25817539.js"></script>
-<!-- End of HubSpot Embed Code -->
+    <!-- Start of HubSpot Embed Code -->
+    <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25817539.js"></script> -->
+    <!-- End of HubSpot Embed Code -->
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-230327306-1">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-230327306-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-230327306-1');
-</script>
+        gtag('config', 'UA-230327306-1');
+    </script>
 </body>
 
 </html>

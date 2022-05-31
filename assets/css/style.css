@@ -1807,7 +1807,7 @@ ul.accordion li.show a.toggle img {
   bottom: 20%;
   display: flex;
   color: #fff;
-  z-index: 1000;
+  z-index: 100000;
 }
 
 #lang > div {
@@ -2417,4 +2417,33 @@ ul.social-icons-simple li a::before {
   .partner__lead {
     width: 100%;
   }
+}
+
+
+
+/* cookies popup */
+
+.nav_tabs li{
+  width: 33%;
+  text-align: center;
+}
+
+.nav_tabs li a{
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.5em;
+  color: #000;
+  font-weight: bold;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.nav_tabs li a.active{
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.line-height-2{
+  line-height: 1.8;
 }
