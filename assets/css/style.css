@@ -2482,3 +2482,11 @@ ul.social-icons-simple li a::before {
 .modal-lg, .modal-xl {
   max-width: 900px;
 }
+
+.modal-dialog{
+  overflow-y: initial !important
+}
+.modal-body{
+  max-height: 70vh;
+  overflow-y: auto;
+}
