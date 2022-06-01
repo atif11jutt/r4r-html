@@ -2463,3 +2463,11 @@ ul.social-icons-simple li a::before {
   background-color: transparent;
   box-shadow: none !important;
 }
+
+#cookieAcceptPopup{
+  padding: 15px;
+}
+
+.modal-lg, .modal-xl {
+  max-width: 900px;
+}
