@@ -281,7 +281,7 @@ $(document).ready(function () {
   });
 
   // Check cookie
-  if ($.cookie("necessaryCookie") != "active") $("#cookieAcceptPopup").show();
+  if ($.cookie("necessaryCookie") != "active") $("#cookieAcceptPopup").fadeIn(500);
   // if ($.cookie("declineCookie") != "active") $("#cookieAcceptPopup").show();
 
   //Assign cookie on click

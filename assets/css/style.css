@@ -2431,12 +2431,20 @@ ul.social-icons-simple li a::before {
 .nav_tabs li a{
   display: block;
   width: 100%;
-  padding: 0.5em;
-  font-size: 1.75em;
+  padding: 0.75em 0.25em;
+  font-size: 1.6em;
   color: #000;
   font-weight: bold;
   transition: 0.3s;
   border-bottom: 2px solid transparent;
+}
+
+.heading_font{
+  font-size: 1.6em;
+}
+
+#cookieAcceptPopup p{
+  font-size: 1.6em;
 }
 
 .nav_tabs li a.active{
@@ -2448,6 +2456,9 @@ ul.social-icons-simple li a::before {
   line-height: 1.8;
 }
 
+.nav_tabs{
+  border-bottom: 1px solid #ccc;
+}
 
 .btn-red{
   background-color: red;
