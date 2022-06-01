@@ -2447,3 +2447,19 @@ ul.social-icons-simple li a::before {
 .line-height-2{
   line-height: 1.8;
 }
+
+
+.btn-red{
+  background-color: red;
+  border-color: red;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+
+.btn-red-outline{
+  border-color: red !important;
+  color: red !important;
+  background-color: transparent;
+  box-shadow: none !important;
+}

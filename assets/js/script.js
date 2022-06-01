@@ -277,19 +277,19 @@ $(document).ready(function () {
 
   $("#cookieDeclineBarConfirm").on("click", function () {
     $.cookie("declineCookie", "active", { expires: 1 }); // cookie will expire in 1 day
-    $("#cookieAcceptPopup").hide();
+    $("#cookieAcceptPopup").fadeOut(500);
   });
 
   // Check cookie
   if ($.cookie("necessaryCookie") != "active") $("#cookieAcceptPopup").show();
-  if ($.cookie("declineCookie") != "active") $("#cookieAcceptPopup").show();
+  // if ($.cookie("declineCookie") != "active") $("#cookieAcceptPopup").show();
 
   //Assign cookie on click
   $("#cookieAcceptBarConfirm").on("click", function () {
     $.cookie("necessaryCookie", "active", { expires: 365 }); // cookie will expire in 360 days
-    $("#cookieAcceptPopup").hide();
+    $("#cookieAcceptPopup").fadeOut(500);
   });
 
   
-  
+
 });
