@@ -446,7 +446,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link lang" data-en="Details" data-de="Details" data-pl="Szczegóły"
-                                data-toggle="tab" href="#tab2">Details</a>
+                                data-toggle="tab" id="tab_2_btn" href="#tab2">Details</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link lang" data-en="About Cookies" data-de="Über Cookies" data-pl="O cookies"
@@ -603,19 +603,30 @@
                 </div>
 
                 <!-- Modal footer -->
-                <div class="modal-footer">
+                <div class="modal-footer px-0 pb-0">
 
-                    <div class="d-flex justify-content-between w-100">
+                    <div class="row w-100">
                         
-                    <button type="button" class="btn btn-outline-danger lang" data-dismiss="modal"
+                        <div class="col-sm-4 mb-3">
+                            <button type="button" class="btn w-100 py-3 font-weight-bold btn-outline-danger lang" data-dismiss="modal"
                     id="cookieDeclineBarConfirm" data-en="Decline" data-de="Ablehnen" data-pl="Odrzuć">Decline</button>
+                        </div>
 
-                <button type="button" class="btn btn-primary lang" data-dismiss="modal"
-                    id="cookieCustomizeBarConfirm" data-en="Customize >" data-de="Anpassen >" data-pl="Dostosuj >">Customize</button>
+                        <div class="col-sm-4 mb-3">
+                            
+                <button type="button" class="btn w-100 py-3 font-weight-bold btn-primary lang" data-dismiss="modal"
+                id="cookieCustomizeBarConfirm" data-en="Customize >" data-de="Anpassen >" data-pl="Dostosuj >">Customize</button>
 
-                <button type="button" class="btn btn-success" data-dismiss="modal"
-                    id="cookieAcceptBarConfirm">Accept</button>
+                        </div>
 
+                        <div class="col-sm-4 mb-3">
+                            
+                <button type="button" class="btn w-100 py-3 font-weight-bold btn-success" data-dismiss="modal"
+                id="cookieAcceptBarConfirm">Accept</button>
+
+                        </div>
+
+                    
                     </div>
 
                 </div>

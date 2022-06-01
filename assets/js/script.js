@@ -249,8 +249,6 @@ $(document).ready(function () {
     });
   });
 
-  
-
   $.ajax({
     url: "http://ip-api.com/json",
     type: "GET",
@@ -260,9 +258,9 @@ $(document).ready(function () {
 
       if (curCountry == "Germany") {
         $("#lang .de:not(.active)").click();
-      }else if (curCountry == "Poland") {
+      } else if (curCountry == "Poland") {
         $("#lang .pl:not(.active)").click();
-      }else {
+      } else {
         $("#lang .en:not(.active)").click();
       }
     },
@@ -271,22 +269,27 @@ $(document).ready(function () {
     },
   });
 
+  // customise cookies button
 
-    
+  $("#cookieCustomizeBarConfirm").click(function () {
+    $("#tab_2_btn").click();
+  });
+
+  $("#cookieDeclineBarConfirm").on("click", function () {
+    $.cookie("declineCookie", "active", { expires: 1 }); // cookie will expire in 1 day
+    $("#cookieAcceptPopup").hide();
+  });
+
+  // Check cookie
+  if ($.cookie("necessaryCookie") != "active") $("#cookieAcceptPopup").show();
+  if ($.cookie("declineCookie") != "active") $("#cookieAcceptPopup").show();
+
+  //Assign cookie on click
+  $("#cookieAcceptBarConfirm").on("click", function () {
+    $.cookie("necessaryCookie", "active", { expires: 365 }); // cookie will expire in 360 days
+    $("#cookieAcceptPopup").hide();
+  });
+
   
-  
-  function cookiesPolicyBar(){
-      // Check cookie 
-      if ($.cookie('yourCookieName') != "active") $('#cookieAcceptPopup').show(); 
-      //Assign cookie on click
-      $('#cookieAcceptBarConfirm').on('click',function(){
-          $.cookie('yourCookieName', 'active', { expires: 1 }); // cookie will expire in one day
-          $('#cookieAcceptPopup').hide();
-      });
-  }
-
-
-  cookiesPolicyBar()
-
   
 });
